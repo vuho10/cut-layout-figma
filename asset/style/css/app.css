@@ -26,9 +26,9 @@
 }
 
 .navbar__nav li {
-    font-family: 'Montserrat';
-    font-size: 15px;
+    font: 15px 'Montserrat', sans-serif;
     line-height: 18px;
+    font-weight: 400;
     letter-spacing: 0em;
 
 }
@@ -51,30 +51,37 @@ a {
     text-decoration: none
 }
 
-.header__logo p {
+.header__logo a {
     position: absolute;
-    top: 0.5%;
-    left: 11.50%;
-    font-family: 'Roboto';
-    font-size: 20px;
+    left: 11.5%;
+    top:3% ;
+    font: 20px 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 #swiper__pagination--style {
     height: 800px;
 }
 
-.swiper-button-prev .swiper-button-next {
+.swiper-button-prev.swiper-button-next {
     width: 16px;
     height: 28px;
     left: 364px;
     top: 466px;
 
 }
+
+.swiper-button-prev::after {
+    color: #000000;
+}
+
+.swiper-button-next::after {
+    color: #000000;
+}
+
 
 .swiper {
     height: 600px;
@@ -128,10 +135,11 @@ a {
 .slide__text h1 {
     display: flex;
     justify-content: left;
-    font-family: 'Montserrat';
+    width: 379px;
+    height: 59px;
+    font: 48px 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 700px;
-    font-size: 48px;
+    font-weight: 700;
     line-height: 59px;
     color: #000000;
 }
@@ -139,7 +147,7 @@ a {
 .slide__text p {
     width: 487px;
     height: 76px;
-    font-family: 'Roboto';
+    font: 15px 'Roboto', sans-serif;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
@@ -157,8 +165,7 @@ a {
     justify-content: center;
     padding-bottom: 5px;
     border-radius: nullpx;
-    font-family: 'Montserrat';
-    font-size: 32px;
+    font-family: 32px 'Montserrat', sans-serif;
     font-weight: 700px;
     line-height: 39px;
     letter-spacing: 0em;
@@ -202,9 +209,7 @@ a {
 .product__right--left {
     display: flex;
     justify-content: center;
-    /* gap: 10px; */
     gap: 32px;
-
     width: 580px;
     height: 274px;
     border-radius: 10px;
@@ -238,16 +243,11 @@ a {
 .title__our--product {
     display: flex;
     justify-content: center;
-    /* padding-top: 3%; */
-    font-family: 'Montserrat';
+    font: 32px 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
     line-height: 39px;
-    /* identical to box height */
-
     text-align: center;
-
     color: #000000;
 }
 
@@ -266,10 +266,9 @@ a {
     list-style: none;
     align-items: center;
     background-color: #C4C4C4;
-    font-family: 'Montserrat';
+    font: 18px 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400px;
-    font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #656565;
@@ -282,7 +281,6 @@ a {
     text-align: center;
     font-size: 18px;
     line-height: 22px;
-    /* color: red; */
 }
 
 #border__bottom {
@@ -332,7 +330,7 @@ a {
 .list__title--name {
     width: 376px;
     line-height: 10%;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #404040;
 
 }
@@ -355,19 +353,12 @@ a {
 }
 
 #title__about--us {
-    font-family: 'Montserrat';
+    font: 32px 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
     line-height: 39px;
-
-
     text-align: center;
-
     color: #000000;
-
-
-
 }
 
 #text__about--us {
@@ -388,10 +379,9 @@ a {
     padding: 16px;
     width: 172px;
     border-radius: 10px;
-    font-family: 'Roboto';
+    font: 15px 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
     line-height: 18px;
     text-align: center;
     color: #F2F2F2;
@@ -413,15 +403,17 @@ a {
 
 .footer__sign--up {
     height: 126px;
+    /* margin-bottom: 10px;
+    border-bottom:1px solid #d7c6c6; */
 }
 
 .footer__info {
     height: 144px;
 }
-
 .hr__sect,
 .hr__sect2 {
-    width: 1360px;
+   
+    width: 1500px;
     margin-top: 90px;
     left: 0%;
     right: 0%;
@@ -431,7 +423,6 @@ a {
     background-color: #606060;
     color: aliceblue;
 }
-
 .footer__sign--up input {
     height: 48px;
     width: 615px;
@@ -449,12 +440,10 @@ a {
     height: 48px;
     margin-left: -106px;
     border-radius: 40px;
-    /* outline: none #151313; */
     border: 7px solid #FFFFFF;
-    font-family: 'Poppins';
+    font: 15px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
     line-height: 150%;
     background-color: #FFFFFF;
 }
@@ -465,10 +454,9 @@ a {
 
 .footer__sign--up h6 {
     margin-bottom: 2%;
-    font-family: 'Poppins';
+    font: 16px 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700px;
-    font-size: 16px;
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
@@ -480,17 +468,15 @@ a {
     padding-top: 40px;
     gap: 165px;
     line-height: 30px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
 
 .flex__gap1 {
     padding-top: 30px;
-    /* font-family: 'Montserrat';
-    font-style: normal; */
     font-weight: 700px;
-    font-size: 32px;
     line-height: 39px;
+    font: 32px 'Montserrat', sans-serif;
     color: #FFFFFF;
 
 
@@ -500,7 +486,6 @@ a {
 .flex__gap3 ul {
     list-style: none;
     color: #FFFFFF;
-
 
 }
 
@@ -521,11 +506,12 @@ a {
 
 #flex__color {
     color: #9D9D9D;
+    padding-bottom: 10px;
 }
 
 .footer__info {
     padding-top: 20px;
     color: #FFFFFF;
-    font-family: 'Montserrat';
+    font: 13px 'Montserrat', sans-serif;
     font-style: normal;
 }
