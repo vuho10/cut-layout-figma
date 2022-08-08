@@ -425,11 +425,8 @@ a {
 
 .hr__sect,
 .hr__sect2 {
-
-    width: 1500px;
+    width: 100%;
     margin-top: 90px;
-    left: 0%;
-    right: 0%;
     top: 40.75%;
     bottom: 59.25%;
     height: 1px;
