@@ -51,15 +51,27 @@ a {
     text-decoration: none
 }
 
+.header__logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #C4C4C4;
+    border-radius: 10px;
+}
+
 .header__logo a {
     position: absolute;
-    left: 11.5%;
-    top:3% ;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font: 20px 'Roboto', sans-serif;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0em;
+    font-weight: 700px;
+    line-height: 24px;
+    /* letter-spacing: 0em; */
     text-align: left;
+
 }
 
 #swiper__pagination--style {
@@ -243,11 +255,11 @@ a {
 .title__our--product {
     display: flex;
     justify-content: center;
-    font: 32px 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 39px;
     text-align: center;
+    font-family: 32px 'Montserrat', sans-serif;
+    font-weight: 700px;
+    line-height: 39px;
+    letter-spacing: 0em;
     color: #000000;
 }
 
@@ -410,9 +422,10 @@ a {
 .footer__info {
     height: 144px;
 }
+
 .hr__sect,
 .hr__sect2 {
-   
+
     width: 1500px;
     margin-top: 90px;
     left: 0%;
@@ -423,6 +436,7 @@ a {
     background-color: #606060;
     color: aliceblue;
 }
+
 .footer__sign--up input {
     height: 48px;
     width: 615px;
