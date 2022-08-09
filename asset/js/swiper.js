@@ -1,17 +1,4 @@
 
-// var swiper = new Swiper(".mySwiper", {
-//     cssMode: true,
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//     },
-//     mousewheel: true,
-//     keyboard: true,
-// });
-
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -26,3 +13,12 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

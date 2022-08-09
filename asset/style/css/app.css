@@ -17,11 +17,22 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.menu {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
+
+.header__navbar ul li a.active {
+    color: #000000;
+}
 .navbar__nav {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 40px;
+    margin-left: 10px;
 
 }
 
@@ -69,7 +80,6 @@ a {
     font: 20px 'Roboto', sans-serif;
     font-weight: 700px;
     line-height: 24px;
-    /* letter-spacing: 0em; */
     text-align: left;
 
 }
@@ -126,12 +136,6 @@ a {
     font-size: 18px;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .swiper-pagination {
     position: absolute;
@@ -168,8 +172,8 @@ a {
 }
 
 .feature__product {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .title__feature {
@@ -192,6 +196,7 @@ a {
 .content__center {
     display: flex;
     justify-content: center;
+
 }
 
 .mySwiper {
@@ -252,6 +257,79 @@ a {
 
 }
 
+/* our product */
+.container__our-product {
+    max-width: 1194px;
+    max-width: 1194px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-bottom: 32px;
+    gap: 128px;
+    border-radius: 10px;
+    list-style: none;
+    background-color: #E1E1E1;;
+    align-items: center;
+    font: 18px 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 22px;
+    text-align: center;
+    color: #656565;
+}
+
+#nav ul li a {
+    text-decoration: none;
+}
+
+.our__product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    justify-content: center;
+    grid-gap: 33px 33px;
+    width: 100%;
+    height: auto;
+}
+
+.box__product .box__img {
+    align-items: center;
+    background-color: #E1E1E1;;
+    width: 376px;
+    height: 247px;
+    border-radius: 10px;
+}
+
+.box__desc .box__desc--name {
+    width: 376px;
+    height: 26px;
+    margin-top: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #404040;
+}
+
+.box__desc .box__desc--prices {
+    width: 49px;
+    height: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #404040;
+}
+
 .title__our--product {
     display: flex;
     justify-content: center;
@@ -261,29 +339,6 @@ a {
     line-height: 39px;
     letter-spacing: 0em;
     color: #000000;
-}
-
-.nav__our--product {
-    width: 1194px;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 128px;
-    height: 64px;
-    margin-bottom: 3%;
-    border-radius: 10px;
-    list-style: none;
-    align-items: center;
-    background-color: #C4C4C4;
-    font: 18px 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400px;
-    line-height: 22px;
-    text-align: center;
-    color: #656565;
 }
 
 #font__size {
@@ -303,50 +358,7 @@ a {
     background-color: #000000;
 }
 
-
-.content__our--product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card__product {
-    display: flex;
-    justify-content: space-between;
-    width: 1194px;
-    left: 364px;
-    top: 1838px;
-    border-radius: 10px;
-}
-
-.card__boby--product {
-    flex: none;
-    flex-grow: 0;
-    gap: 10px;
-    width: 376px;
-    height: 247px;
-    border-radius: 10px;
-    order: 0;
-    align-self: stretch;
-    background: #E1E1E1;
-    background-color: #C4C4C4;
-}
-
-/*  ---------------------------*/
-.card_title--name {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.list__title--name {
-    width: 376px;
-    line-height: 10%;
-    font-family: 'Montserrat', sans-serif;
-    color: #404040;
-
-}
-
+/* ---------------- */
 .about__us {
     display: flex;
     flex-direction: column;
@@ -415,8 +427,6 @@ a {
 
 .footer__sign--up {
     height: 126px;
-    /* margin-bottom: 10px;
-    border-bottom:1px solid #d7c6c6; */
 }
 
 .footer__info {
@@ -484,6 +494,12 @@ a {
 }
 
 .flex__gap1 {
+    height: 39px;
+    width: 140px;
+    left: 491px;
+    top: 280px;
+    border-radius: nullpx;
+
     padding-top: 30px;
     font-weight: 700px;
     line-height: 39px;
@@ -525,4 +541,8 @@ a {
     color: #FFFFFF;
     font: 13px 'Montserrat', sans-serif;
     font-style: normal;
+}
+
+.hamburger {
+    display: none;
 }
