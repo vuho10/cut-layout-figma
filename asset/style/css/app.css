@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .wrapper {
     max-width: 1920px;
     margin: auto;
@@ -155,7 +157,7 @@ a {
     height: 59px;
     font: 48px 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight:bold;
     line-height: 59px;
     color: #000000;
 }
@@ -168,7 +170,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     font-size: 15px;
-    font-weight: 400px;
+    font-weight: bold;
 }
 
 .feature__product {
@@ -182,7 +184,7 @@ a {
     padding-bottom: 5px;
     border-radius: nullpx;
     font-family: 32px 'Montserrat', sans-serif;
-    font-weight: 700px;
+    font-weight: bold;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: center;
@@ -198,11 +200,9 @@ a {
     justify-content: center;
 
 }
-
 .mySwiper {
     width: 76%;
 }
-
 .product__left {
     height: 580px;
     width: 580px;
@@ -326,7 +326,6 @@ a {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-
     color: #404040;
 }
 
@@ -335,13 +334,13 @@ a {
     justify-content: center;
     text-align: center;
     font-family: 32px 'Montserrat', sans-serif;
-    font-weight: 700px;
+    font-weight: bold 700px;
     line-height: 39px;
     letter-spacing: 0em;
     color: #000000;
 }
 
-#font__size {
+.font__size {
     width: 10px;
     font-style: normal;
     font-weight: 700px;
@@ -350,7 +349,7 @@ a {
     line-height: 22px;
 }
 
-#border__bottom {
+.border__bottom {
     position: absolute;
     width: 100px;
     height: 4px;
@@ -416,7 +415,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 530px;
+    height: auto;
     left: 0px;
     top: 0px;
     align-items: center;
@@ -430,8 +429,9 @@ a {
 }
 
 .footer__info {
-    height: 144px;
+    height: 32px;
 }
+
 
 .hr__sect,
 .hr__sect2 {
@@ -495,7 +495,6 @@ a {
 
 .flex__gap1 {
     height: 39px;
-    width: 140px;
     left: 491px;
     top: 280px;
     border-radius: nullpx;
