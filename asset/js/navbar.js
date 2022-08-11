@@ -1,5 +1,5 @@
-hamburger = document.querySelector(".hamburger");
+hamburger = document.querySelector(".header-hamburger");
 hamburger.onclick = function () {
-    navBar = document.querySelector(".header__navbar ")
-    navBar.classList.toggle("active")
+    navBar = document.querySelector(".header-navbar")
+    navBar.classList.toggle("header-navbar-link")
 };
