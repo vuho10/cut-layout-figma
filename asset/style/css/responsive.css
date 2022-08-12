@@ -1,0 +1,363 @@
+
+/* Mobile with <720px */
+@media only screen and (max-width: 46.1875em) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .wrapper {
+        max-width: 46.1875em;
+        margin: auto;
+    }
+
+    .header-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-hamburger .header-hamburger-line {
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        margin: 6px 0;
+    }
+
+    .header-navbar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 5px 5px rgb(0, 0, 30%);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .header-navbar-list li {
+        margin: auto;
+        padding: 15px;
+    }
+
+    .header-navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 50px auto;
+        padding: 0px;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .header-navbar ul li a {
+        margin-bottom: 12px;
+        color: #000000;
+    }
+
+    .header-navbar.header-navbar-link {
+        height: 450px;
+    }
+
+    .nav-bar.header-navbar-link ul {
+        opacity: 1;
+    }
+
+    .swiper {
+        height: 800px;
+        background-color: #E1E1E1;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        color: #000000;
+        font-size: 40px;
+        margin: auto 10px;
+    }
+
+
+    .swiper-slide-content.swiper-slide-title {
+        margin-right: 10px;
+        font: 80px 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 59px;
+        color: #000000;
+        
+
+    }
+
+    .swiper-slide-content .swiper-slide-text {
+        width: 85%;
+    }
+
+    .mySwiper {
+        width: 100%;
+    }
+
+    .swiper-slide-content {
+        left: 15%;
+    }
+
+    .feature-product-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .feature-product-left {
+        width: 380px;
+        height: 274px;
+
+    }
+
+    .feature-product-card-list1 {
+        width: 175px;
+        height: 263px;
+        padding: 0;
+    }
+
+    .feature-product-card-list2 {
+        width: 175px;
+        height: 263px;
+    }
+
+    .feature-product-right-card {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+    }
+
+    .feature-product-right-card1 {
+        width: 380px;
+    }
+
+    .our-product-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .our-product-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        padding: 0;
+        align-items: center;
+        background-color: #fefefe;
+    }
+
+    .our-product-border-bottom {
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        margin-top: 1%;
+        background-color: #000000;
+    }
+
+    .our-product-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        grid-gap: 28px 28px;
+        height: auto;
+
+    }
+
+    .our-product-card {
+        display: block;
+        left: 364px;
+        top: 1838px;
+        border-radius: 10px;
+    }
+
+    .about-us-content {
+        width: 85%;
+    }
+
+    .footer-infor {
+        display: block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer-form .footer-form-input {
+        display: inline-block;
+        width: 350px;
+        margin-top: 10px;
+
+    }
+
+    .hr__sect,
+    .hr__sect2 {
+        margin-top: 55px;
+    }
+
+    .footer-infor-brand {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-infor-service ul,
+    .footer-infor-rules ul {
+        padding: 0;
+    }
+}
+
+/* tablet 740px and with <1024 px */
+@media only screen and (min-width:740px) and (max-width: 1024px) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .wrapper {
+        max-width: 1024px;
+        margin: auto;
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    .header-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-hamburger .header-hamburger-line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .header-navbar {
+        width: 100vw;
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 1.5px;
+        background-color: white;
+        box-shadow: 5px 5px rgb(0, 0, 30%);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .header-navbar-list li {
+        margin: auto;
+        padding: 15px;
+    }
+
+    .header-navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 50px auto;
+        padding: 0px;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .header-navbar ul li a {
+        margin-bottom: 12px;
+        color: #000000;
+    }
+
+    .header-navbar.header-navbar-link {
+        height: 450px;
+    }
+
+    .nav-bar.header-navbar-link ul {
+        opacity: 1;
+    }
+
+    .header-navbar ul li a:hover {
+        color: rgb(234, 218, 218);
+        background-color: #baacac;
+    }
+
+    .swiper-button-prev {
+        width: 1%;
+        height: 1%;
+    }
+
+    .swiper-button-next {
+        width: 1%;
+        height: 1%;
+    }
+
+    .swiper-slide-content,
+    .swiper-slide-title {
+        font: 40px 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 59px;
+        /* font-size: 40px; */
+        color: #000000;
+    }
+
+    .feature-product-content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .our-product-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .our-product-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        padding: 0px;
+        align-items: center;
+        background-color: #fefefe;
+    }
+
+    .our-product-border-bottom {
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        margin-top: 1%;
+        background-color: #000000;
+    }
+
+    .our-product-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 28px 28px;
+        height: auto;
+        padding: 0 50px;
+    }
+
+    .our-product-card {
+        display: block;
+        left: 364px;
+        top: 1838px;
+        border-radius: 10px;
+    }
+
+    .footer-infor {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        gap: 76px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+    }
+
+}
