@@ -287,6 +287,10 @@ a {
     width: 376px;
     height: 26px;
     margin-top: 22px;
+    text-overflow: ellipsis;
+    /* Needed to make it work */
+    overflow: hidden;
+    white-space: nowrap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
