@@ -10,36 +10,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./asset/style/css/reset.css">
     <link rel="stylesheet" href="./asset/style/css/app.css">
-    <link rel="stylesheet" href="./asset/style/css/responsive.css">
-    
+    <link rel="stylesheet" href="./asset/style/css/responsive.css">  
     <!-- Demo styles -->
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="container">
-            <header class="header">
-                <a href=" #" class="header-logo"> <img src="./asset/img/logo.png" alt=""></img></a>
-                <div class="header-hamburger">
-                    <div class="header-hamburger-line"></div>
-                    <div class="header-hamburger-line"></div>
-                    <div class="header-hamburger-line"></div>
-                </div>
-                <div class="header-navbar">
-                    <ul class="header-navbar-list">
-                        <li class="header-navbar-item"><a href=" #" class="header-navbar-links">About us</a></li>
-                        <li class="header-navbar-item"><a href=" #" class="header-navbar-link" >Brands</a></li>
-                        <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">News</a></li>
-                        <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">Dealer</a></li>
-                        <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">Customer servies</a></li>
-                        <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">Contact us</a></li>
-                        <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">My cart</a> <span class="header-navbar-mycart">3</span></li>
-
-                    </ul>
-                </div>
-            </header>
+        <div class="header-scroll-fixed">
+            <div class="container">
+                <header class="header">
+                    <a href=" #" class="header-logo"> <img src="./asset/img/logo.png" alt=""></img></a>
+                    <div class="header-hamburger">
+                        <div class="header-hamburger-line"></div>
+                        <div class="header-hamburger-line"></div>
+                        <div class="header-hamburger-line"></div>
+                    </div>
+                    <div class="header-navbar">
+                        <ul class="header-navbar-list">
+                            <li class="header-navbar-item"><a href="#about" class="header-navbar-links">About us</a></li>
+                            <li class="header-navbar-item"><a href=" #" class="header-navbar-link" >Brands</a></li>
+                            <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">News</a></li>
+                            <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">Dealer</a></li>
+                            <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">Customer servies</a></li>
+                            <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">Contact us</a></li>
+                            <li class="header-navbar-item"><a href=" #"  class="header-navbar-link">My cart</a> <span class="header-navbar-mycart">3</span></li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
         </div>
-        <main>
+        <main class="main">
             <section class="swiper">
                 <div class="container">
                     <div class="swiper mySwiper">
@@ -119,7 +119,7 @@
                         <div class="feature-product-right">
                             <div class="feature-product-right-card">
                                 <div class="feature-product-card-list1">
-                                    4
+                                    
                                 </div>
                                 <div class="feature-product-card-list2">
                                     5
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about-us">
+            <section id="about" class="about-us">
                 <div class="about-us-content">
                     <h3 class="about-us-title">About us</h3>
                     <p class="about-us-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -224,15 +224,15 @@
                 <div class="footer-infor-service">
                     <ul class="footer-infor-list">
                         <li class="footer-infor-color">Site</li>
-                        <li>Home</li>
-                        <li>About us</li>
+                        <li class="footer-infor-item">Home</li>
+                        <li class="footer-infor-item">About us</li>
                     </ul>
                 </div>
                 <div class="footer-infor-rules">
                     <ul class="footer-infor-list">
                         <li class="footer-infor-color">Terms</li>
-                        <li>Polices</li>
-                        <li>Privacy</li>
+                        <li class="footer-infor-item">Polices</li>
+                        <li class="footer-infor-item">Privacy</li>
                     </ul>
                 </div>
                 <div class="footer-circle">
@@ -253,5 +253,4 @@
 <script src="./asset/js/swiper.js"></script>
 <script src="./asset/js/navbar.js"></script>
 <!-- <script src="./asset/js/dropdownMore.js"></script> -->
-
 </html>

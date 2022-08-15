@@ -1,23 +1,16 @@
 /* Mobile with <720px */
-
-/* box-shadow: 0 0 15px rgb(0 0 0 / 30%);
-transition: 0.5s;
-overflow: hidden; */
-
-/* overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical; */
 @media only screen and (max-width: 46.1875em) {
-    .header {
-        padding: 0 50px;
-    }
+    /* .header {
+        padding: 0 10px;
+    } */
 
     .wrapper {
         max-width: 46.1875em;
         margin: auto;
+    }
+
+    .container {
+        width: 350px;
     }
 
     .header-hamburger {
@@ -75,6 +68,10 @@ overflow: hidden; */
         background-color: #E1E1E1;
     }
 
+    .swiper-backface-hidden .swiper-slide {
+        width: 277px;
+    }
+
     .swiper-button-prev::after,
     .swiper-button-next::after {
         color: #000000;
@@ -83,23 +80,17 @@ overflow: hidden; */
     }
 
     .swiper-slide-content .swiper-slide-title {
-        text-overflow: ellipsis;
-        /* Needed to make it work */
-        overflow: hidden;
-        white-space: nowrap;
         margin-right: 10px;
-        font: 32px 'Montserrat', sans-serif;
-        font-weight: 700;
+        font-size: 30px;
+        font-weight: 700px;
         line-height: 59px;
     }
 
     .swiper-slide-content .swiper-slide-text {
-        width: 85%;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-
     }
 
     .mySwiper {
@@ -113,37 +104,35 @@ overflow: hidden; */
     .feature-product-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         gap: 32px;
     }
 
     .feature-product-left {
-        width: 380px;
+        width: 350px;
         height: 274px;
 
     }
 
     .feature-product-card-list1 {
-        width: 175px;
+        width: 150px;
         height: 263px;
         padding: 0;
     }
 
     .feature-product-card-list2 {
-        width: 175px;
+        width: 150px;
         height: 263px;
     }
 
     .feature-product-right-card {
         display: flex;
         align-items: center;
-        gap: 32px;
-
+        width: 350px;
     }
 
     .feature-product-right-card1 {
-        width: 380px;
+        width: 350px;
     }
 
     .our-product-nav {
@@ -172,12 +161,18 @@ overflow: hidden; */
         grid-gap: 28px 28px;
         height: auto;
     }
-
+    .our-product-card .card-img{
+        width: 350px;
+    }
     .our-product-card {
         display: block;
-        left: 364px;
-        top: 1838px;
+        /* left: 364px;
+        top: 1838px; */
+        width: 350px;
         border-radius: 10px;
+    }
+    .card-desc .card-desc-name{
+        width: 350px;
     }
 
     .about-us-content {
@@ -216,15 +211,23 @@ overflow: hidden; */
 
 /* tablet 740px and with <1024 px */
 @media only screen and (min-width:740px) and (max-width: 1024px) {
-    .header {
+    /* .header {
         padding: 0 50px;
-    }
+    } */
 
     .wrapper {
         max-width: 1024px;
         margin: auto;
         height: 500px;
         border-radius: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .our-product-body {
+        width: 90%;
     }
 
     .header-hamburger {
@@ -245,9 +248,9 @@ overflow: hidden; */
         position: absolute;
         top: 80px;
         left: 0%;
-        /* left: 1.5px; */
         background-color: white;
-        box-shadow: 5px 5px rgb(0, 0, 30%);
+        /* box-shadow: 5px 5px rgb(0, 0, 30%); */
+        box-shadow: 0 0 5px rgb(0, 0, 0, 30%);
         transition: 0.5s;
         overflow: hidden;
         z-index: 10;
@@ -295,16 +298,10 @@ overflow: hidden; */
 
     .swiper-slide-content.swiper-slide-title {
         font: 40px 'Montserrat', sans-serif;
-        font-weight: 700;
+        font-weight: bolder;
         line-height: 59px;
         color: #000000;
 
-    }
-
-    .feature-product-content {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 32px;
     }
 
     .our-product-nav {
