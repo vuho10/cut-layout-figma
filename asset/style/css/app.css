@@ -62,6 +62,7 @@ header{
     justify-content: space-between;
     height: 80px;
     width: 100%;
+    transition: 1s;
     align-items: center;
     text-align: center;
     background-color: #FFFFFF;
