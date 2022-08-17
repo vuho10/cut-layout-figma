@@ -74,18 +74,19 @@
     color: var(--color-black);
 }
 
-
-.active{
-    border-right: 4px solid #000000;
-   padding-right: 50px;
-    
+.header-navbar-border{
+    margin: 0 -10px;
+    width: 1px;
+    height: 15px;
+    background-color: #000000;
 }
 
 .header-navbar-mycart {
     height: 23px;
     width: 23px;
     padding: 4px 10px 4px 10px;
-    margin-left: 10px;
+    margin-left: 17px;
+    margin-right: 9px;
     border-radius: 2px;
     color: white;
     background-color: #C69E3F;
