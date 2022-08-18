@@ -84,7 +84,6 @@
         height: 1%;
     }
 
-
     .swiper-slide-content.swiper-slide-title {
         font: 40px 'Montserrat', sans-serif;
         font-weight: bolder;
@@ -461,6 +460,9 @@
 
     .swiper {
         height: 800px;
+        max-height: 800px;
+        height: 35vw;
+        min-height: 350px;
         background-color: #E1E1E1;
     }
 

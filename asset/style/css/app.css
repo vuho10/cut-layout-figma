@@ -131,25 +131,43 @@ a {
     height: 28px;
     left: 364px;
     top: 466px;
+  
 
 }
 
 .swiper-button-prev::after {
+    margin-bottom: 100px;
     color: var(--color-black);
 }
-
 .swiper-button-next::after {
+    margin-bottom: 100px;
     color: var(--color-black);
+
 }
 
 .banner{
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
+    max-height: 800px;
+    height: 35vw;
+    min-height: 350px;
     margin-top: 81px;
+    padding-top: 128px;
+    padding-bottom: 135px;
     background-color: #E1E1E1;
 }
+
 .swiper {
-    height: 800px;
+    width: 100%;
+    max-height: 800px;
+    height: 35vw;
+    min-height: 350px;
+   padding-bottom: 116px;
+    /* padding-top:130px; */
+    /* height: 800px; */
+    /* padding: 140px 0 140px 0; */
+    /* padding: 48px; */
+   
     left: 0px;
     border-radius: 0px;
     background-color: var(--box-color);
@@ -185,9 +203,10 @@ a {
 
 .swiper-slide-content {
     position: absolute;
-    top: 35%;
+    top: 29%;
     left: 10%;
 }
+
 
 .swiper-slide-content .swiper-slide-title {
     display: flex;
@@ -433,7 +452,7 @@ a {
     width: 100%;
     height: 40vw;
     max-height: 900px;
-    min-height: 350px;
+    min-height: 350px;  
     margin-top: 75px;
     padding: 143px 0 143px 0;
     align-items: center;
