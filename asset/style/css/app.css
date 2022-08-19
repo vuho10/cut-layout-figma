@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 
 :root {
     --font-weight-3: 300;
@@ -25,12 +24,11 @@
 }
 
 .container .header-content {
-    /* box-shadow: 0px 0px #0000001A; */
     width: 100%;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -38,18 +36,23 @@ html{
     width: 100%;
     margin: 0 auto;
 }
-.header{
+
+.header .on-scroll {
+    /* box-shadow: rgb(234, 228, 228) 4px 4px 4px 4px;
+    background: rgb(231, 130, 130); */
+
+}
+
+.header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
     background-color: white;
-    /* box-shadow: 0px 0px 4px 0px #0000001A; */
-   
-
+    transition: 1s;
 }
-header{
 
+header {
     box-shadow: 0 0 5px rgb(0, 0, 0, 30%);
 }
 
@@ -62,7 +65,7 @@ header{
     justify-content: space-between;
     height: 80px;
     width: 100%;
-    transition: 1s;
+    /* transition: 1s; */
     align-items: center;
     text-align: center;
     background-color: #FFFFFF;
@@ -81,8 +84,11 @@ header{
     flex-direction: row;
     list-style: none;
     gap: 40px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+}
 
+.header-navbar-item:last-child {
+    margin-left: 15px;
 }
 
 .header-navbar-item {
@@ -99,6 +105,7 @@ header{
     color: #9D9D9D;
 
 }
+
 
 .header-navbar-link {
     color: var(--color-black);
@@ -131,7 +138,7 @@ a {
     height: 28px;
     left: 364px;
     top: 466px;
-  
+
 
 }
 
@@ -139,15 +146,15 @@ a {
     margin-bottom: 100px;
     color: var(--color-black);
 }
+
 .swiper-button-next::after {
     margin-bottom: 100px;
     color: var(--color-black);
 
 }
 
-.banner{
+.banner {
     width: 100%;
-    /* height: 800px; */
     max-height: 800px;
     height: 35vw;
     min-height: 350px;
@@ -162,12 +169,7 @@ a {
     max-height: 800px;
     height: 35vw;
     min-height: 350px;
-   padding-bottom: 116px;
-    /* padding-top:130px; */
-    /* height: 800px; */
-    /* padding: 140px 0 140px 0; */
-    /* padding: 48px; */
-   
+    padding-bottom: 117px;
     left: 0px;
     border-radius: 0px;
     background-color: var(--box-color);
@@ -188,6 +190,8 @@ a {
     align-items: center;
     text-align: center;
     font-size: 40px;
+    /* height: 800px; */
+    /* margin-top: 80%; */
 }
 
 .swiper-pagination {
@@ -196,9 +200,18 @@ a {
 
 }
 
+.swiper-slide img {
+    width: 100%;
+    height: 100;
+    vertical-align: middle;
+    object-fit: fill;
+}
+
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: #000000;
+    width: 10px;
+    height: 10px;
 }
 
 .swiper-slide-content {
@@ -256,7 +269,7 @@ a {
 .feature-product-content {
     display: flex;
     justify-content: center;
-    margin-top:2.7%;
+    margin-top: 2.7%;
     gap: 32px;
 }
 
@@ -406,6 +419,10 @@ a {
     /* font-weight: bolder; */
 }
 
+.our-product-link {
+    color: #656565;
+}
+
 .our-product-link,
 .our-product-links {
     position: relative;
@@ -452,7 +469,7 @@ a {
     width: 100%;
     height: 40vw;
     max-height: 900px;
-    min-height: 350px;  
+    min-height: 350px;
     margin-top: 75px;
     padding: 143px 0 143px 0;
     align-items: center;
@@ -511,10 +528,6 @@ a {
     background-color: #404040;
 }
 
-.footer-form {
-    height: 126px;
-}
-
 .footer-info-copyright {
     height: 32px;
 }
@@ -539,6 +552,10 @@ a {
     color: aliceblue;
 }
 
+.footer-form {
+    max-height: 126px;
+}
+
 .footer-form .footer-form-input {
     height: 48px;
     width: 616px;
@@ -553,8 +570,9 @@ a {
 
 .footer-form .footer-form-btn {
     width: 100px;
-    height: 48px;
+    height: 50px;
     margin-left: -106px;
+    /* padding-right: -10px; */
     border-radius: 24px;
     border: 2px solid #FFFFFF;
     font-family: var(--ff-poppins);
@@ -563,6 +581,7 @@ a {
     line-height: 150%;
     background-color: #FFFFFF;
 }
+
 
 a {
     color: #000000;
@@ -599,10 +618,11 @@ a {
     color: #FFFFFF;
 }
 
-.footer-infor-rules{
-    margin-left:-29px;
+.footer-infor-rules {
+    margin-left: -29px;
     margin-right: 23px;
 }
+
 .footer-infor-list {
     list-style: none;
     color: #FFFFFF;
