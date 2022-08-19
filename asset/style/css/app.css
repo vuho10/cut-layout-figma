@@ -58,6 +58,7 @@ header {
 
 .wrapper {
     margin: auto;
+    width: 1920px;
 }
 
 .header-content {
