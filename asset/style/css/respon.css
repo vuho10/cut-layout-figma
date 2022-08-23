@@ -18,7 +18,14 @@
         font-weight: 300;
         margin-right: 20px;
     }
-
+    .our-product-link:hover::after {
+        width: 100%;
+        height: 4px;
+        background-color: #E1E1E1;
+    }
+    .our-product-link:hover {
+        color: #656565;
+    }
     .our-product-nav {
         padding: 0 10px;
         overflow-y: hidden;
@@ -117,17 +124,14 @@
         opacity: 1;
     }
 
-    .our-product-nav {
-        overflow-x: scroll;
-
-    }
-
     .our-product-nav-list {
         white-space: nowrap;
         justify-content: space-between;
-        padding: 0 10px;
+        padding:0 10px;
         gap: 50px;
-        margin: 0;
+    }
+    .our-product-nav{
+       padding-bottom: 10px;
     }
 
     .our-product-body {
