@@ -1,31 +1,52 @@
+@media screen and (max-width:1024px) {
+    .swiper-slide-content {
+        top: 77px;
+    }
+}
+
 @media screen and (max-width:992px) {
+    :root {
+        --font-weight-6: 600;
+        --font-weight-3: 300;
+
+        --font-size-45: 45px;
+        --font-size-14: 14px;
+
+        --font-size-30: 30px;
+        --font-size-17: 17px;
+
+        --font-size-18: 18px;
+
+    }
 
     .swiper-slide-content .swiper-slide-title {
-        font-size: 42px;
-        font-weight: 600;
+        font-size: var(--font-size-45);
+        font-weight: var(--font-weight-6);
     }
 
     .swiper-slide-content .swiper-slide-text {
-        font-size: 13px;
-        font-weight: 300;
+        font-size: var(--font-size-14);
+        font-weight: var(--font-weight-3);
 
     }
 
     .header-navbar-item {
-        font-family: var(--ff-montserrat);
-        font-size: 14px;
+        font-size: var(--font-size-14);
         line-height: 18.29px;
-        font-weight: 300;
+        font-weight: var(--font-weight-3);
         margin-right: 20px;
     }
+
     .our-product-link:hover::after {
         width: 100%;
         height: 4px;
         background-color: #E1E1E1;
     }
+
     .our-product-link:hover {
         color: #656565;
     }
+
     .our-product-nav {
         padding: 0 10px;
         overflow-y: hidden;
@@ -36,6 +57,17 @@
         margin: 0 10px;
     }
 
+    .feature-product-title,.our-product-title,.about-us-title {
+        font-size: var(--font-size-30);
+        font-weight: var(--font-weight-6);
+    }
+.card-desc-prices{
+    font-size: var(--font-size-14);
+
+}
+.card-desc-name{
+    font-size: var(--font-size-17) !important;
+}
     .footer-infor {
         gap: 100px;
         transition: 0.3s;
@@ -43,7 +75,56 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    :root{
+        --font-size-16: 16px;
+    }
+    .feature-product-content {
+        display: none;
+    }
+
+    .feature-product-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 311px 311px;
+        gap: 32px;
+    }
+    .card-desc-name{
+        font-size: var(--font-size-16) !important;
+    }
+    .feature-product-img {
+        background-color: var(--box-color);
+        border-radius: var(--border-radius);
+    }
+
+    .footer-infor {
+        gap: 90px;
+        transition: 0.3s;
+    }
+
+}
+
+@media screen and (max-width:790px) {
+    .footer-infor {
+        gap: 25px !important;
+        transition: 0.3s;
+    }
+}
 @media screen and (max-width:768px) {
+    :root {
+        --font-weight-6: 500;
+        --font-weight-3: 300;
+
+        --font-size-45: 45px;
+        --font-size-14: 14px;
+
+        --font-size-30: 30px;
+        --font-size-17: 17px;
+
+        --font-size-18: 18px;
+
+    }
+
     .swiper-button-next:after {
         font-size: 38px;
     }
@@ -127,11 +208,12 @@
     .our-product-nav-list {
         white-space: nowrap;
         justify-content: space-between;
-        padding:0 10px;
+        padding: 0 10px;
         gap: 50px;
     }
-    .our-product-nav{
-       padding-bottom: 10px;
+
+    .our-product-nav {
+        padding-bottom: 10px;
     }
 
     .our-product-body {
@@ -145,92 +227,6 @@
     .footer-infor {
         gap: 30px;
         transition: 0.3s;
-    }
-}
-@media screen and (max-width:790px){
-    .footer-infor {
-        gap: 25px !important;
-        transition: 0.3s;
-    }
-}
-
-@media screen and (max-width:900px) {
-    .feature-product-content {
-        display: none;
-    }
-
-    .feature-product-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 311px 311px;
-        gap: 32px;
-    }
-
-    .feature-product-img {
-        background-color: var(--box-color);
-        border-radius: var(--border-radius);
-    }
-
-    .footer-infor {
-        gap: 90px;
-        transition: 0.3s;
-    }
-
-}
-
-@media screen and (max-width:480px) {
-
-    .swiper-button-next:after {
-        font-size: 28px !important;
-    }
-
-    .swiper-button-prev::after {
-        font-size: 28px !important;
-
-    }
-    .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-        bottom: 14px !important;
-    }
-    .swiper-slide-content .swiper-slide-title {
-        font-size: 30px;
-        font-weight: 400;
-        margin:10px 0;
-        
-    }
-    .swiper-slide-content {
-        top: 127px !important;
-    }
-    .swiper-slide-text {
-        font-size: 11px;
-        font-weight: 300;
-        font-weight: 30vw;
-
-    }
-
-    .our-product-nav-list {
-        white-space: nowrap;
-        justify-content: start;
-        gap: 30px;
-        margin: 0 10px;
-    }
-
-    .our-product-body {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-product-card {
-        grid-template-columns: 1fr;
-        grid-template-rows: 247px 247px 247px 247px;
-    }
-    .footer-form .footer-form-title{
-        margin-top: 10px;
-    }
-
-}
-
-@media screen and (max-width:1024px) {
-    .swiper-slide-content {
-        top: 77px;
     }
 }
 
@@ -248,43 +244,6 @@
         font-size: 12px;
     }
 }
-
-@media only screen and (max-width:580px) {
-    .footer-infor {
-        display: block;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .footer-form .footer-form-input {
-        display: inline-block;
-        width: 350px;
-        margin-top: 10px;
-    }
-
-    .hr__sect,
-    .hr__sect2 {
-        margin-top: 50px;
-    }
-
-    .footer-infor-brand {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 0;
-    }
-
-    .footer-infor-list {
-        padding: 0;
-    }
-
-    .footer-infor-rules {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
-
 @media only screen and (max-width:620px) {
     .footer-infor {
         margin-top: -35px;
@@ -338,6 +297,101 @@
         padding-top: 60px;
     }
 }
+@media only screen and (max-width:580px) {
+    .card-desc-name{
+        font-size:15px !important;
+    }
+    .footer-infor {
+        display: block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer-form .footer-form-input {
+        display: inline-block;
+        width: 350px;
+        margin-top: 10px;
+    }
+
+    .hr__sect,
+    .hr__sect2 {
+        margin-top: 50px;
+    }
+
+    .footer-infor-brand {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-infor-list {
+        padding: 0;
+    }
+
+    .footer-infor-rules {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .swiper-button-next:after {
+        font-size: 28px !important;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 28px !important;
+
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 14px !important;
+    }
+
+    .swiper-slide-content .swiper-slide-title {
+        font-size: 30px;
+        font-weight: 400;
+        margin: 10px 0;
+
+    }
+
+    .swiper-slide-content {
+        top: 127px !important;
+    }
+
+    .swiper-slide-text {
+        font-size: 11px;
+        font-weight: 300;
+        font-weight: 30vw;
+
+    }
+
+    .our-product-nav-list {
+        white-space: nowrap;
+        justify-content: start;
+        gap: 30px;
+        margin: 0 10px;
+    }
+
+    .our-product-body {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-product-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 247px 247px 247px 247px;
+    }
+
+    .footer-form .footer-form-title {
+        margin-top: 10px;
+    }
+
+}
 
 @media screen and (max-width:320px) {
 
@@ -352,10 +406,12 @@
 
 
     }
+
     .swiper-slide-content {
         top: 100px;
         left: 8%;
     }
+
     .swiper-slide-content .swiper-slide-title {
         font-size: 26px;
         font-weight: 500;
@@ -365,20 +421,26 @@
         font-size: 10px;
         font-weight: 300;
     }
-    .footer-form-title{
+
+    .footer-form-title {
         margin-bottom: 10px !important;
     }
-    .footer-subcribe{
+
+    .footer-subcribe {
         width: 280px;
         margin: 0 auto;
     }
-    .footer-subcribe-btn{
+
+    .footer-subcribe-btn {
         font-size: 9px !important;
     }
+
     .footer-infor {
         padding-top: 50px;
     }
-    .hr__sect, .hr__sect2 {
+
+    .hr__sect,
+    .hr__sect2 {
         margin-top: 15px;
     }
 

@@ -38,16 +38,19 @@ html {
     margin: 0 auto;
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
     background-color: white;
+   
 }
 
-header {
-    box-shadow: 0 0 5px rgb(0, 0, 0, 30%);
+.header {
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 }
 
 .wrapper {
