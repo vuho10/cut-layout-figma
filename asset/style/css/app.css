@@ -419,10 +419,6 @@ a {
     background-color: #404040;
 }
 
-.footer-info-copyright {
-    height: 32px;
-}
-
 .hr__sect {
     width: 100%;
     margin-top: 64px;
@@ -560,7 +556,7 @@ a {
 }
 
 .footer-info-copyright {
-    padding-top: 20px;
+    padding: 32px 0;
     color: #FFFFFF;
     font-family: var(--ff-montserrat);
     font-size: 13px;
