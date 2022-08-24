@@ -390,7 +390,9 @@
     .footer-form .footer-form-title {
         margin-top: 10px;
     }
-
+    .footer-info-copyright {
+        padding: 10px 0;
+    }
 }
 
 @media screen and (max-width:320px) {
