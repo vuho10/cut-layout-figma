@@ -34,23 +34,28 @@ html {
 
 .container {
     max-width: 1194px;
-    width: calc(100% - 30px);
+    /* width: calc(100% - 30px); */
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 999;
-    background-color: white;
-   
+    z-index:99;
+    background-color: white; 
+}
+.slider{
+    margin-top: -85px;
 }
 
 .header {
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.5s;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    background-color: white;
+
 }
 
 .wrapper {
@@ -61,6 +66,7 @@ header {
 .header-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 10px 0 10px 0;
     transition: 1s;
@@ -247,9 +253,14 @@ a {
 }
 
 .our-product-links {
-    font-weight: var(--font-weight-7);
+    font-weight: var(--font-weight-7)!important;
+    line-height: 21.94;
+    letter-spacing: -1px;
+    margin-left: 25px;
 }
-
+.fa-caret-down{
+    margin-right: 16px;
+}
 
 .our-product-body {
     display: grid;

@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 34.8%;
+  top: 35.5%;
   left: 10.3%;
   font-size: 18px;
   -webkit-box-sizing: border-box;
@@ -79,10 +79,10 @@
   background: none !important;
 } */
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #E1E1E1;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   opacity: 1;
 }
 
