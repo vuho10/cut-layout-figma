@@ -13,55 +13,40 @@
     --font-size-48: 48px;
     /*  */
     --color-black: #000000;
-    --ff-roboto: 'Roboto', sans-serif;
+    --ff-Poppins: 'Poppins', sans-serif;
     --ff-roboto-condensed: 'Roboto Condensed', sans-serif;
     --ff-source: 'Source Sans Pro', sans-serif;
 
 }
 
-.wrapper {
-    max-width: 1440px;
-    margin: auto;
-}
-
 .container {
-    max-width: 1253px;
+    max-width: 1136px;
     width: 100%;
     margin: 0 auto;
-}
-
-/* .header-scroll-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: white;
-    box-shadow: 0px 0px 4px 0px #0000001A;
-} */
-.grad {
-    /* background-image: linear-gradient(180deg, rgba(116, 164, 221, 0.42) 0%, rgba(3, 4, 7, 0.42) 0%, rgba(116, 190, 221, 0.42) 100%); */
-    background-blend-mode: overlay;
-    /* background-image: linear-gradient(180deg,black 60%,rgba(116, 164, 221, 0.42)10%,black); */
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    height: 102px;
+    max-height: 102px;
+    min-height: 90px;
     width: 100%;
     align-items: center;
     text-align: center;
-    /* background-color: #FFFFFF; */
     box-shadow: 0px 0px #0000001A;
+    font-family:var(--ff-Poppins);
+    font-size: 15px;
+    font-weight: 600;
+    
 }
 
 .header-navbar-list {
     display: flex;
     flex-direction: row;
+    padding: 0;
     list-style: none;
-    gap: 40px;
-    margin-left: 10px;
-
+    gap: 48px;
+   
 }
 
 .header-navbar-item {
@@ -71,14 +56,14 @@
 }
 
 .header-navbar-link {
-    color: var(--color-black);
+    color:#FFFF;;
 }
 
 .header-navbar-border{
     margin: 0 -10px;
     width: 1px;
     height: 15px;
-    background-color: #000000;
+    background-color: white;
 }
 
 .header-navbar-mycart {
@@ -92,19 +77,14 @@
     background-color: #C69E3F;
 
 }
-
+.header-scroll-fixed{
+    background-color: #00344C;
+}
 a {
     text-decoration: none
 }
-
-.intro {
-    display: flex;
-    justify-content: space-around;
-    height: 805px;
-    align-items: center;
+.products__details{
+    padding-top: 10px;
 }
 
-.intro-content {
-    width: 400px;
-    text-align: justify;
-}
+

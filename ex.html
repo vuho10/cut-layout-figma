@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- link font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- link styles -->
-    <!-- <link rel="stylesheet" href="../asset/style/css/reset.css"> -->
-    <link rel="stylesheet" href="../asset/style/css/homePage.css">
-    <link rel="stylesheet" href="../asset/style/css/slider.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="./asset/style/css/slider.css">
+    <link rel="stylesheet" href="./asset/style/css/homePage.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper ">
+        <!-- Swiper -->
         <header class="header-scroll-fixed">
             <div class="container">
                 <div class="header">
@@ -71,29 +71,35 @@
             </div>
         </header>
         <main>
-            <sesion class="container">
-                <div class="products__detail">
+            <section class="container">
+                <div class="products__details">
                     <div class="products__slider">
                         <div style="--swiper-navigation-color: rgb(43, 32, 32); --swiper-pagination-color: #fff"
                             class="swiper mySwiper2">
                             <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                        </div> -->
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
@@ -113,24 +119,31 @@
                         </div>
                         <div thumbsSlider="" class="swiper mySwiper">
                             <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                        </div> -->
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                </div>
+
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
                                 </div>
@@ -146,23 +159,24 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="products__discription">
+                    <div class="products__discription">
                         <div class="products__name">XOR Titanium Collection</div>
                         <div class="products__prices">đ 99,000,000</div>
                         <div class="products__color"></div>
                         <div class="products__quantity"></div>
 
-                    </div> -->
-
-
+                    </div>
                 </div>
-            </sesion>
-          
+
+            </section>
         </main>
-        <footer></footer>
+
+        <!-- Swiper JS -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./asset/js/slider.js"></script>
 </body>
-<script src="../asset/js/slider.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 </html>
