@@ -73,10 +73,19 @@
   border: none;
 }
 
+.mySwiper2 .swiper-slide-active img {
+  max-width: 589px;
+  min-width: 300px;
+  /* width: 29vw; */
+  /* height: 26vw; */
+  min-height: 300px;
+  border: none;
+}
+
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
   border: 1px solid black;
-  padding:0 10px;
+  padding: 0 10px;
 }
 
 .swiper-slide img {
@@ -91,9 +100,4 @@
   display: block;
   width: 40%;
   height: 100%;
-}
-
-.products__details {
-  display: flex;
-  justify-content: space-between;
 }

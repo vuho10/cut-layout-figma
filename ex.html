@@ -11,9 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- import css -->
     <link rel="stylesheet" href="./asset/style/css/slider.css">
     <link rel="stylesheet" href="./asset/style/css/homePage.css">
+    <link rel="stylesheet" href="./asset/style/css/reset.css">
 </head>
 
 <body>
@@ -23,11 +27,10 @@
             <div class="container">
                 <div class="header">
                     <a href=" #" class="header-logo"> <img src="../asset/img/logo1.png" alt=""></img></a>
-
                     <div class="header-navbar">
                         <ul class="header-navbar-list">
                             <li class="header-navbar-item">
-                                <a href=" #" class="header-navbar-links">About us</a>
+                                <a href=" #" class="header-navbar-link">About us</a>
                             </li>
 
                             <li class="header-navbar-item">
@@ -160,14 +163,33 @@
                         </div>
                     </div>
                     <div class="products__discription">
-                        <div class="products__name">XOR Titanium Collection</div>
-                        <div class="products__prices">đ 99,000,000</div>
-                        <div class="products__color"></div>
-                        <div class="products__quantity"></div>
+                        <h3 class="products__name">XOR Titanium Collection</h3>
+                        <p class="products__prices">đ 99,000,000</p>
+                        <div class="products__color">
+                            <div class="products__color--name">
+                                <span class="products__color--Classic">Classic</span>
+                                <span class="products__color--Ebony">Ebony</span>
+                                <span class="products__color--Rose">Rose</span>
+                            </div>
+                            <div class="products__color--brand">
+                                <span class="products__color--brand-C"></span>
+                                <span class="products__color-brand-E"></span>
+                                <span class="products__color-brand-R"></span>
+                            </div>
 
+                        </div>
+                        <div class="product-count">
+	        				<label for="size">Quantity</label>
+	        				<form action="#" class="display-flex">
+							    <div class="qtyminus">-</div>
+							    <input type="text" name="quantity" value="1" class="qty">
+							    <div class="qtyplus">+</div>
+							</form>
+							<a href="#" class="round-black-btn">Add To Cart</a>
+							<a href="#" class="round-black-btn">Order Now</a>
+	        			</div>
                     </div>
                 </div>
-
             </section>
         </main>
 
