@@ -1,0 +1,35 @@
+:root {
+    --font-weight-3: 300;
+    --font-weight-4: 400;
+    --font-weight-5: 500;
+    --font-weight-6: 600;
+    --font-weight-7: 700;
+    /*  */
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-24: 24px;
+    --font-size-32: 32px;
+    --font-size-36: 36px;
+    --font-size-48: 48px;
+    /*  */
+    --color-black: #000000;
+    --ff-Poppins: 'Poppins', sans-serif;
+    --ff-roboto-condensed: 'Roboto Condensed', sans-serif;
+    --ff-source: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 1186px;
+    width: 100%;
+    margin: 0 auto;
+}

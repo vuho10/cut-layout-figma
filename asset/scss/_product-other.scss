@@ -1,0 +1,47 @@
+.product__other {
+
+    padding-top: 38px;
+    padding-bottom: 74px;
+    background-color: #F2F2F2;
+
+    &--title {
+        margin-bottom: 28px;
+        font-family: var(--ff-roboto-condensed);
+        font-size: var(--font-size-36);
+        font-weight: var(--font-weight-7);
+        line-height: 42px;
+        letter-spacing: 0.025em;
+        color: #001A31;
+
+
+    }
+
+    &--img,
+    &--card {
+        position: relative;
+        max-width: 585px;
+        min-width: 280px;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    &--name {
+        position: absolute;
+        bottom: 24px;
+        left: 32px;
+        font-family: var(--ff-roboto-condensed);
+        font-size: 20px;
+        color: #FFFFFF;
+        letter-spacing: 0em;
+        line-height: 26px;
+
+    }
+
+    &--brand {
+        font-weight: var(--font-weight-3);
+    }
+
+    &--discription {
+        font-weight: var(--font-weight-7);
+    }
+}
