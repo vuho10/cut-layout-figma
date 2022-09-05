@@ -1,12 +1,41 @@
-.store__phone {
-    position: absolute;
-    left: 92%;
-    top: 755px;
-    &--call{
-       margin-top: -16px;
-    }
-    &--call, &--mes{
-        margin-left: 16px;
-    }
+.contact {
+    z-index: 1;
+    right: 16px;
+    bottom: 20px;
+    position: fixed;
 
+    &__store {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &--mes {
+            color: #357FFF;
+
+        }
+
+        &--call {
+            color: #002A3A;
+
+        }
+
+        &--mes,
+        &--call {
+            box-shadow: 4px 4px 16px 0px #0000001A;
+            background: #FFFFFF;
+            font-size: 25px;
+            cursor: pointer;
+            transform: 0.4s;
+            max-width: 64px;
+            width: 4.444vw;
+            height: 4.444vw;
+            min-width: 44px;
+            min-height: 44px;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
 }

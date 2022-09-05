@@ -1,6 +1,8 @@
 .product {
     &__our {
         margin-bottom: 106px;
+        padding: 0 var(--padding-20);
+
     }
 
     &__our--title,
@@ -26,7 +28,7 @@
     }
 
     &__card {
-        position: relative;
+        // position: relative;
         max-width: 585px;
         min-width: 280px;
         width: 100%;

@@ -1,3 +1,7 @@
+.header-hamburger {
+    display: block;
+}
+
 .header-scroll-fixed {
     position: fixed;
     top: 0;
@@ -13,7 +17,8 @@
     max-height: 102px;
     height: 39vw;
     min-height: 90px;
-    width: 100%;
+    // width: 100%;
+    padding: 0 var(--padding-20);
     align-items: center;
     text-align: center;
     font-family: var(--ff-Poppins);
@@ -77,15 +82,10 @@
         background-color: white;
     }
 
-    // &-navbar-item{
-    //    display: flex;
-
-    // }
-
 }
 
-.icon-select{
-    padding: 20px 0;
+.icon-select {
+    // padding: 20px 0;
     margin-left: 6px;
     vertical-align: middle;
     color: white;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <title>Product details</title>
@@ -8,6 +7,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- link font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +42,14 @@
                     <a href=" #" class="header-logo">
                         <img class="header-logo-img" src="../asset/img/logo1.png" alt=""></img>
                     </a>
+
+                    <div class="header-hamburger">
+                        <div class="header-hamburger-line"></div>
+
+                        <div class="header-hamburger-line"></div>
+
+                        <div class="header-hamburger-line"></div>
+                    </div>
                     <div class="header-navbar">
                         <ul class="header-navbar-list">
                             <li class="header-navbar-item">
@@ -187,10 +195,17 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="store__phone">
-                    <img class="store__phone--mes" src="../asset/img/mes.png" alt=" mes">
-                    <img class="store__phone--call" src="../asset/img/call.png" alt=" call">
+            <section class="contact">
+                <div class="contact__store">
+                    <div class="contact__store--mes">
+                        <!-- <img class="store__phone--mes" src="../asset/img/mes.png" alt=" mes"> -->
+                        <i class="ri-messenger-fill"></i>
+                    </div>
+                    <div class="contact__store--call">
+                        <!-- <img class="store__phone--call" src="../asset/img/call.png" alt=" call"> -->
+                        <i class="ri-phone-fill"></i>
+
+                    </div>
                 </div>
             </section>
             <section class="tabs">
@@ -424,6 +439,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="../asset/js/slider.js"></script>
+    <script src="../asset/js/navbar.js"></script>
     <!-- sass ./asset/scss/index.scss ./asset/css/index.css --watch -->
 </body>
 

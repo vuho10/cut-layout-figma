@@ -1,7 +1,6 @@
 .product__other {
+    padding: 38px var(--padding-20) 74px;
 
-    padding-top: 38px;
-    padding-bottom: 74px;
     background-color: #F2F2F2;
 
     &--title {
@@ -18,7 +17,7 @@
 
     &--img,
     &--card {
-        position: relative;
+        // position: relative;
         max-width: 585px;
         min-width: 280px;
         width: 100%;
