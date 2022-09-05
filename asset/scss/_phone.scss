@@ -1,0 +1,12 @@
+.store__phone {
+    position: absolute;
+    left: 92%;
+    top: 755px;
+    &--call{
+       margin-top: -16px;
+    }
+    &--call, &--mes{
+        margin-left: 16px;
+    }
+
+}

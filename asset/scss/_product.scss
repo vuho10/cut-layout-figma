@@ -29,7 +29,8 @@
         &--name {
             margin-right: 25px;
 
-            &:nth-child(2),&:nth-child(3){
+            &:nth-child(2),
+            &:nth-child(3) {
                 margin-top: -2px;
 
             }
@@ -124,6 +125,11 @@
 
         &--qty {
             max-width: 30px;
+            font-family: var(--ff-Poppins);
+            font-size: var(--font-size-16);
+            font-weight: var(--font-weight-6);
+            line-height: 21px;
+            letter-spacing: 0.025em;
             background-color: #ffffff;
             outline: none #ffffff;
             border: solid #ffffff;
@@ -137,8 +143,10 @@
         &--order {
             position: relative;
             max-width: 235px;
-            width: 40vw;
-            height: 48px;
+            min-width: 180px;
+            // width: 40vw;
+            max-height: 48px;
+            // height: 40vw;
         }
 
         &--add::before {
