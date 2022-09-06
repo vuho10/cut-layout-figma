@@ -14,6 +14,7 @@
         font-weight: var(--font-weight-7);
         line-height: 47px;
         letter-spacing: 0.025em;
+        transition: 1s;
     }
 
     &__prices {
@@ -33,7 +34,7 @@
 
             &:nth-child(2),
             &:nth-child(3) {
-                margin-top: -2px;
+                margin-top: 0px;
 
             }
         }
@@ -44,6 +45,18 @@
             font-weight: var(--font-weight-6);
             line-height: 18px;
             letter-spacing: 0em;
+        }
+
+        &--ebony,
+        &--rose {
+            font-family: var(--ff-Poppins);
+            color: #A5A5A5;
+            font-size: var(--font-size-14);
+            font-weight: var(--font-weight-4);
+            line-height: 18px;
+            letter-spacing: 0em;
+
+
         }
 
         &--classic,
@@ -143,29 +156,39 @@
 
         &--add,
         &--order {
-            position: relative;
-            max-width: 235px;
-            min-width: 180px;
-            // width: 40vw;
-            max-height: 48px;
-            // height: 40vw;
+            // cursor: pointer;
+            // max-width: 235px;
+            // width: 16.319vw;
+            // height: 3.333vw;
+            // min-width: 180px;
+            // max-height: 48px;
+            // min-height: 48px;
+            // border-radius: 30px;
+            // border: none;
+            // outline: none;
+
         }
 
-        &--add::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: 30px;
-            padding: 3px;
-            background: linear-gradient(to right, #957327 0%, #dfc47a 100%);
-            -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-        }
+        // &--add::before {
+        //     content: "";
+        //     position: absolute;
+        //     inset: 0;
+        //     border-radius: 30px;
+        //     padding: 3px;
+        //     background: linear-gradient(to right, #957327 0%, #dfc47a 100%);
+        //     -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+        //     -webkit-mask-composite: xor;
+
+        //     mask-composite: exclude;
+        // }
 
         &--add {
             margin-right: 16px;
-            color: #cb9d37;
+            background: linear-gradient(rgb(255, 255, 255) 0 0) padding-box, linear-gradient(to right, rgb(204, 159, 58), rgb(235, 207, 130)) border-box;
+            padding: 10px;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            color: #CB9D37;
         }
 
         &--order {
@@ -176,7 +199,7 @@
 
         &--add,
         &--order {
-            padding: 13.5px 77px;
+            padding: 13.5px 76px;
         }
     }
 

@@ -3,7 +3,7 @@
         display: flex;
         justify-content: center;
         gap: 32px;
-        padding: 10px 0 12px 0;
+        padding: 10px 20px 12px 20px;
         background-color: #00344C;
         color: #FFFFFF;
         font-family: var(--ff-Poppins);
@@ -45,6 +45,7 @@
         line-height: 14px;
         letter-spacing: 0.05em;
     }
+
     &__service--img {
         height: 16px;
         width: 16px;
@@ -59,11 +60,15 @@
     background-color: #B69046;
 
     &__icon {
-        margin-top: -2px;
-        margin-bottom: -5px;
+        margin-top: 0px;
+        margin-bottom: 1px;
+
+        &-img {
+            vertical-align: middle;
+        }
 
         &-img:nth-child(2) {
-            margin: 0 48px 0 49.25px;
+            margin: 0 44px 0 45.25px;
         }
     }
 
@@ -71,6 +76,7 @@
         display: flex;
         justify-content: center;
         gap: 49px;
+        padding: 0 20px;
         font-family: var(--ff-Poppins);
         font-size: var(--font-size-14);
         font-weight: var(--font-weight-4);
@@ -112,3 +118,4 @@
         letter-spacing: 0em;
     }
 }
+
