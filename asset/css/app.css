@@ -209,10 +209,6 @@ template {
   margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .container {
   max-width: 1186px;
   width: 100%;
