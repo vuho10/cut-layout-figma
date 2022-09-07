@@ -109,13 +109,18 @@
     }
 
     &__copy {
-        color: white;
+       
         margin-bottom: -13px;
-        font-family: var(--ff-source);
-        font-size: 13px;
-        font-weight: var(--font-weight-4);
-        line-height: 16px;
-        letter-spacing: 0em;
+       
+        &--right{
+            font-family: var(--ff-source);
+            color: white;
+            font-size: 13px;
+            font-weight: var(--font-weight-4);
+            line-height: 16px;
+            letter-spacing: 0em;
+
+        }
     }
 }
 

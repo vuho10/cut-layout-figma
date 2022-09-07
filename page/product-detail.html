@@ -187,7 +187,7 @@
 
                             <div class="product__color--name tabslide" onclick="openSlide(event, 'rose')">
                                 <p class="product__color--rose">Rose</p>
-                                
+
                                 <p class="product__color--brand-r"></p>
                             </div>
                         </div>
@@ -198,117 +198,123 @@
                                 <div class="product__quantity">
                                     <div class="product__quantity--minus is-form" onclick="minus()">-</div>
 
-                                    <input type="text" name="quantity" value="01" class="product__quantity--qty" id="qty-input" min="0" max="100">
-                                    
+                                    <input type="text" name="quantity" value="01" class="product__quantity--qty"
+                                        id="qty-input" min="0" max="100">
+
                                     <div class="product__quantity--plus is-form" onclick="plus()">+</div>
                                 </div>
 
                             </form>
-                            
-                            <a href=" #" class="product__btn--add">
-                                Add To Cart
-                            </a>
-                            <a href="#" class="product__btn--order">Order Now</a>
+                            <div class="product__btn--cart">
+                                <button href=" #" class="product__btn--add">Add To Cart</button>
+
+                                <button href=" #" class="product__btn--order"> Order Now</button>
+
+                            </div>
+
                         </div>
-                       
+
                         <div class="product__content">
                             <p class="product__content--text">
                                 <span class="product__content--name">Titanium Classic,</span>
                                 understated and chic, is the perfect companion for any occasion.
                             </p>
-                           
+
                             <p class="product__content--text">
                                 <span class="product__content--name">Titanium Ebony</span>
-                                
+
                                 in black PVD, elevates the sense of mystery to the next level.
                             </p>
-                            
+
                             <p class="product__content--text">
                                 <span class="product__content--name">Titanium Rose</span>
-                                
+
                                 with soft colours is the perfect phone for the confident sophisticate.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-           
+
             <section class="contact">
                 <div class="contact__store">
                     <div class="contact__store--mes">
                         <i class="ri-messenger-fill"></i>
                     </div>
-                    
+
                     <div class="contact__store--call">
                         <i class="ri-phone-fill"></i>
 
                     </div>
                 </div>
             </section>
-           
+
             <section class="tabs">
                 <div class="container">
                     <div class="tabs__name">
-                        <p class="tabs__name--london tablinks" onclick="openCity(event, 'London')">Product Informations</p>
-                        
-                        <p class="tabs__name--Paris  tablinks" onclick="openCity(event, 'Paris')">Return & Warranty Policy</p>
+                        <p class="tabs__name--london tablinks" onclick="openTab(event, 'London')">Product Informations
+                        </p>
+
+                        <p class="tabs__name--paris  tablinks" onclick="openTab(event, 'Paris')">Return & Warranty
+                            Policy</p>
                     </div>
-                    
+
                     <div class="tabs__hr"></div>
-                    
-                    <div id="London" class="tabs__content city">
+
+                    <div id="London" class="tabs__content tab">
                         <p>London is the capital city of England.</p>
                     </div>
-                   
-                    <div id="Paris" class="tabs__content city">
+
+                    <div id="Paris" class="tabs__content tab">
                         <div class="tabs__text">
                             <h3 class="tabs__title">1. Return Policy</h3>
-                            
+
                             <p class="tabs__define">Customers have the right to refund the device within 28 days from
                                 the date of purchase if it
                                 is due to a manufacturer's fault.</p>
 
                             <p class="tabs__define"> The refund is FREE</p>
-                            
+
                             <p class="tabs__define"> Refund conditions:</p>
-                            
+
                             <ul>
                                 <li>The device works normally: not locked, showing IMEI.</li>
-                                
-                                <li> The device is intact, not scratched, burned, soaked in water or chemicals, notdropped.</li>
-                               
+
+                                <li> The device is intact, not scratched, burned, soaked in water or chemicals,
+                                    notdropped.</li>
+
                                 <li> With original box, accessories, and warranty card included.</li>
                             </ul>
                         </div>
-                        
+
                         <div class="tabs__text">
                             <h3 class="tabs__title">1. Warranty Policy</h3>
-                            
+
                             <p class="tabs__warranty"> Warranty coverage</p>
-                            
+
                             <ul>
                                 <li>All XOR phone products are officially distributed in the Vietnam market via
                                     Gluxury.
                                 </li>
-                               
+
                                 <li>Warranty period: 1 year from the date of purchase based on the Warranty Card.
                                 </li>
                             </ul>
                         </div>
-                       
+
                         <div class="tabs__text">
                             <p class="tabs__warranty">The warranty period for repaired / replaced products</p>
-                            
+
                             <p class="tabs__policy"> The warranty period for replacement spare parts is calculated as
                                 follows:</p>
-                            
-                                <ul>
+
+                            <ul>
                                 <li> If the product has a warranty period of more than 6 months, the warranty period
                                     of the
                                     replacement spare part will be equal to the remaining warranty period of the
                                     product.
                                 </li>
-                               
+
                                 <li> If the product has less than 6 months of the warranty period or was out of
                                     warranty,
                                     the
@@ -316,10 +322,10 @@
                                 </li>
                             </ul>
                         </div>
-                       
+
                         <div class="tabs__text">
                             <p class="tabs__warranty"> Warranty period with renewed products</p>
-                            
+
                             <p class="tabs__policy"> The warranty period of the renewed products is calculated as
                                 follows:</p>
                             <ul>
@@ -327,49 +333,49 @@
                                     the
                                     new
                                     equipment will be equal to the remaining warranty period of the product.</li>
-                               
-                                    <li> If the product has a warranty period of fewer than 6 months or is out of warranty,
+
+                                <li> If the product has a warranty period of fewer than 6 months or is out of warranty,
                                     the
                                     warranty period of renewed equipment will be 6 months.
                                 </li>
                             </ul>
                         </div>
-                       
+
                         <div class="tabs__text">
                             <p class="tabs__warranty">Warranty conditions</p>
-                           
+
                             <p class="tabs__policy"> The products have some technical defects that need to be repaired
                                 within the warranty
                                 period.he XOR phone products must be distributed genuinely in Vietnam.</p>
-                           
-                                <p class="tabs__policy"> The products will NOT be covered by warranty if they fall under the
+
+                            <p class="tabs__policy"> The products will NOT be covered by warranty if they fall under the
                                 following warranty
                                 disclaimers:</p>
-                           
-                                <ul>                              
-                                    <li> Product warranty expires.</li>
-                               
-                                    <li> Cannot read IMEI on screen.</li>
-                               
-                                    <li> There is no warranty card or the information on the warranty card does not match
+
+                            <ul>
+                                <li> Product warranty expires.</li>
+
+                                <li> Cannot read IMEI on screen.</li>
+
+                                <li> There is no warranty card or the information on the warranty card does not match
                                     with
                                     the
                                     device information.</li>
-                               
-                                    <li> The product is damaged due to normal wear and tear, improper use.</li>
-                                
-                                    <li> The product is tampered with by a third party</li>
-                               
-                                    <li> Failure or damage due to accident, carelessness, dropping, fire or explosion,
+
+                                <li> The product is damaged due to normal wear and tear, improper use.</li>
+
+                                <li> The product is tampered with by a third party</li>
+
+                                <li> Failure or damage due to accident, carelessness, dropping, fire or explosion,
                                     exposure
                                     to
                                     water or chemicals, used in high temperature or humid places, natural disasters.
-                               
-                                    </li>
-                               
-                                    <li> The device is in a locked state, locked sim.</li>
-                               
-                                     <li> Errors or failures due to a functional error of the mobile network operators or a
+
+                                </li>
+
+                                <li> The device is in a locked state, locked sim.</li>
+
+                                <li> Errors or failures due to a functional error of the mobile network operators or a
                                     third
                                     party that is not under the control of XOR Inc.</li>
                             </ul>
@@ -377,7 +383,7 @@
                     </div>
                 </div>
             </section>
-           
+
             <section class="product__our">
                 <div class="container">
                     <h3 class="product__our--title">Pair with our accessories</h3>
@@ -386,55 +392,54 @@
                         <div class="product__card">
                             <div class="product__card--content">
                                 <img class="product__card--img" alt="" src="../asset/img/headphone (2).png"></img>
-                               
+
                                 <div class="product__card--title">Luxury Belt Pouch XOR Case</div>
-                                
+
                                 <div class="product__card--prices">$250</div>
-                                
+
                                 <a class="product__card--add" href=" #">Add To Cart</a>
                             </div>
                         </div>
-                       
+
                         <div class="product__card">
                             <div class="product__card--content">
                                 <img class="product__card--img" alt="" src="../asset/img/headphone (1).png"></img>
-                               
+
                                 <div class="product__card--title">Universal Wireless Charger</div>
-                                
+
                                 <div class="product__card--prices">$165</div>
-                               
+
                                 <a class="product__card--add" href=" #">Add To Cart</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-           
+
             <section class="product__other">
                 <h3 class="product__other--title">Other collections</h3>
-                
+
                 <div class="product__other--colections">
                     <div class="product__other--card">
                         <div class="product__other--content">
                             <a href=""><img class="product__other--img" alt="" src="../asset/img/other1.png"></img></a>
-                           
+
                             <div class="product__other--name">
                                 <span class="product__other--brand">XOR </span>
-                               
+
                                 <span class="product__other--discription">Bespoke</span>
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="product__other--card">
                         <div class="product__other--content">
-                            <a href=" #"><img class="product__other--img" alt=""
-                                    src="../asset/img/other2 .png"></img>
+                            <a href=" #"><img class="product__other--img" alt="" src="../asset/img/other2 .png"></img>
                             </a>
 
                             <div class="product__other--name">
                                 <span class="product__other--brand">XOR </span>
-                               
+
                                 <span class="product__other--discription">Odin</span>
                             </div>
                         </div>
@@ -442,47 +447,47 @@
                 </div>
             </section>
         </main>
-   
+
         <footer>
             <section class="customer__service">
                 <p class="customer__service--hotline">Customer Service Hotline</p>
-                
+
                 <p class="customer__service--time">8:00 - 18:00 on weekdays</p>
-               
+
                 <p class="customer__service--border"></p>
-               
+
                 <p class="customer__service--time">9:00 - 15:00 on Saturday and Sunday</p>
-                
+
                 <div class="customer__service--phone">
                     <img class="customer__service--img" src="../asset/img/Vector.png" alt="">
-                    
+
                     <p>(+84)944 756 756</p>
                 </div>
 
             </section>
-           
+
             <section class="information">
                 <div class="information__icon">
                     <a class="information__icon-img" href=" #">
                         <img src="../asset/img/in.png" alt="">
                     </a>
-                   
+
                     <a class="information__icon-img" href=" #">
                         <img class="information__icon-img" src="../asset/img/gr.png" alt="">
                     </a>
-                   
+
                     <a class="information__icon-img" href=" #">
                         <img class="information__icon-img" src="../asset/img/fb.png" alt="">
                     </a>
                 </div>
-               
+
                 <div class="information__website">
                     <ul class="information__website--list">
-                        
+
                         <li class="information__website--item">
                             <a href="" class="information__website--link">Home</a>
                         </li>
-                       
+
                         <li class="information__website--item"></li>
 
                         <li class="information__website--item">
@@ -514,9 +519,9 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <div class="information__copy">
-                    <p>Copyright informations</p>
+                    <p class="information__copy--right">Copyright informations</p>
                 </div>
             </section>
         </footer>

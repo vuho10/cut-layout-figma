@@ -4,11 +4,11 @@
         justify-content: center;
         margin-top: 77px;
         gap: 48px;
-        font-family: var(--ff-roboto-condensed);
-        font-size: var(--font-size-18);
-        font-weight: var(--font-weight-4);
-        line-height: 23px;
-        letter-spacing: 0.025em;
+        // font-family: var(--ff-roboto-condensed);
+        // font-size: var(--font-size-18);
+        // font-weight: var(--font-weight-4);
+        // line-height: 23px;
+        // letter-spacing: 0.025em;
 
         & .tablinks::after {
             position: absolute;
@@ -28,14 +28,28 @@
         }
 
         & .tablinks.active {
+            font-family: Roboto Condensed;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23px;
+            letter-spacing: 0.025em;
+            text-align: center;
+
             color: #CB9D37;
+            font-weight: var(--font-weight-7);
         }
 
-        &--london {
-            color: #A5A5A5;
-        }
+        // &--london {
 
-        &--Paris {
+        // }
+
+        &--london,
+        &--paris {
+            font-family: Roboto Condensed;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.025em;
             color: #A5A5A5;
         }
 

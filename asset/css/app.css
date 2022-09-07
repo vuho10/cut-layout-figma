@@ -209,6 +209,10 @@ template {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   max-width: 1186px;
   width: 100%;
@@ -290,7 +294,7 @@ template {
   margin: 0 -18px;
   width: 0.5px;
   height: 15px;
-  background-color: white;
+  background-color: #D8D8D8;
 }
 
 .icon-select {
@@ -505,7 +509,7 @@ template {
 .product__count--form {
   display: flex;
   gap: 38px;
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 }
 .product__count--title {
   font-family: var(--ff-Poppins);
@@ -550,23 +554,42 @@ template {
   text-align: center;
 }
 .product__btn--add {
+  font-family: var(--ff-Poppins);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-6);
+  line-height: 21px;
   margin-right: 16px;
   background: linear-gradient(rgb(255, 255, 255) 0 0) padding-box, linear-gradient(to right, rgb(204, 159, 58), rgb(235, 207, 130)) border-box;
-  padding: 10px;
-  border: 2px solid transparent;
+  border: 2px solid transparent !important;
   border-radius: 30px;
   color: #CB9D37;
 }
+.product__btn--add:hover {
+  background-color: #bd369f;
+}
 .product__btn--order {
+  font-family: var(--ff-Poppins);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-6);
+  line-height: 21px;
   color: white;
+  border: 2px solid white;
   border-radius: 30px;
   background: linear-gradient(to right, #957327 0%, #dfc47a 100%);
 }
 .product__btn--add, .product__btn--order {
-  padding: 13.5px 76px;
+  cursor: pointer;
+  max-width: 235px;
+  width: 15.319vw;
+  height: 3.333vw;
+  min-width: 180px;
+  max-height: 48px;
+  min-height: 48px;
+  border: none;
+  outline: none;
 }
 .product__content {
-  margin-top: 61px;
+  margin-top: 48px;
   font-family: var(--ff-Poppins);
   font-size: var(--font-size-15);
   font-weight: var(--font-weight-4);
@@ -575,6 +598,9 @@ template {
 }
 .product__content--text {
   margin-bottom: 25px;
+}
+.product__content--text:nth-child(3) {
+  margin-bottom: 0;
 }
 .product__content--name {
   font-weight: var(--font-weight-7);
@@ -619,11 +645,6 @@ template {
   justify-content: center;
   margin-top: 77px;
   gap: 48px;
-  font-family: var(--ff-roboto-condensed);
-  font-size: var(--font-size-18);
-  font-weight: var(--font-weight-4);
-  line-height: 23px;
-  letter-spacing: 0.025em;
 }
 .tabs__name .tablinks::after {
   position: absolute;
@@ -641,12 +662,21 @@ template {
   height: 3px;
 }
 .tabs__name .tablinks.active {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.025em;
+  text-align: center;
   color: #CB9D37;
+  font-weight: var(--font-weight-7);
 }
-.tabs__name--london {
-  color: #A5A5A5;
-}
-.tabs__name--Paris {
+.tabs__name--london, .tabs__name--paris {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.025em;
   color: #A5A5A5;
 }
 .tabs__name .tablinks {
@@ -887,9 +917,11 @@ template {
   margin: 50px 0 60px 0;
 }
 .information__copy {
-  color: white;
   margin-bottom: -13px;
+}
+.information__copy--right {
   font-family: var(--ff-source);
+  color: white;
   font-size: 13px;
   font-weight: var(--font-weight-4);
   line-height: 16px;
