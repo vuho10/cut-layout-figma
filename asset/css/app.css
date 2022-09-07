@@ -580,7 +580,7 @@ template {
 .product__btn--add, .product__btn--order {
   cursor: pointer;
   max-width: 235px;
-  width: 15.319vw;
+  width: 15vw;
   height: 3.333vw;
   min-width: 180px;
   max-height: 48px;
