@@ -169,7 +169,6 @@
         &--add:hover {
             background-color: #bd369f;
 
-
         }
 
         &--order {
@@ -178,12 +177,10 @@
             font-size: var(--font-size-14);
             font-weight: var(--font-weight-6);
             line-height: 21px;
-            // letter-spacing: 0.05em;
             color: white;
             border: 2px solid white;
             border-radius: 30px;
             background: linear-gradient(to right, #957327 0%, #dfc47a 100%);
-            // padding: 10px;
         }
 
         &--add,
@@ -196,11 +193,8 @@
             min-width: 180px;
             max-height: 48px;
             min-height: 48px;
-            // border-radius: 30px;
             border: none;
             outline: none;
-            // outline: none;
-            // padding: 13.5px 74px;
         }
     }
 

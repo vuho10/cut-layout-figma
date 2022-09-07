@@ -223,7 +223,7 @@ template {
   display: none;
 }
 
-.header-scroll-fixed {
+.scroll__fixed--nav {
   position: fixed;
   top: 0;
   width: 100%;
