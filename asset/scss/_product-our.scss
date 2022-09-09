@@ -35,6 +35,28 @@
         background: #FAFAFA;
         border-radius: 3px;
 
+        &--link-phone {
+
+            & .product__card--img {
+                max-width: 50px;
+                width: 20vw;
+                max-height: 120px;
+                height: 30vw;
+            }
+
+        }
+
+        &--link-charger {
+            & .product__card--img {
+                max-width: 78px;
+                width: 30vw;
+                max-height: 120px;
+                height: 30vw;
+            }
+
+
+        }
+
         &--content {
             justify-content: center;
             padding: 47px 0 48px 0;

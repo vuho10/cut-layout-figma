@@ -17,16 +17,18 @@
     max-height: 102px;
     height: 39vw;
     min-height: 90px;
-    // width: 100%;
-    // padding: 0 var(--padding-20);
     align-items: center;
     text-align: center;
     font-family: var(--ff-Poppins);
     font-size: var(--font-size-15);
     font-weight: var(--font-weight-6);
-    line-height: 23px;
+    // line-height: 23px;
 
     &-logo-img {
+        max-width: 115px;
+        min-width: 60px;
+        width: 40vw;
+        max-height: 70px;
         vertical-align: middle;
     }
 
@@ -36,6 +38,7 @@
         padding: 0;
         margin: 0;
         gap: 48px;
+        line-height: 19px;
         text-align: center;
         align-items: center;
         list-style: none;
@@ -43,6 +46,26 @@
 
     &-navbar-item {
         line-height: 18px;
+
+        & i {
+            vertical-align: middle;
+            color: white;
+            font-size: 12px;
+        }
+    }
+
+    &-navbar-item:nth-child(8) {
+        display: flex !important;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+
+    }
+    &-navbar-item:nth-child(9){
+        display: flex;
+        gap: 11px;
+
     }
 
     &-navbar-country {
@@ -52,24 +75,30 @@
         top: 41px;
         border-radius: 0px;
 
-        img {
+        &--img {
             vertical-align: middle;
         }
     }
 
     &-navbar-link {
         color: #ffff;
-        letter-spacing: 0.032em;
+        letter-spacing: 0.035em;
     }
 
     &-navbar-mycart {
+        display: flex;
+        justify-content: center;
         height: 23px;
-        width: 23px;
-        left: 1190px;
-        top: 39px;
-        margin-left: 11px;
-        margin-right: 1px;
-        padding: 1px 10px 1px 10px;
+        width: 23px;   
+        margin-right: 1px;   
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0em;
+     
+
         color: white;
         background-color: #C69E3F;
         border-radius: 2px;
@@ -91,6 +120,8 @@
 
 .icon-select {
     // padding: 20px 0;
+    width: 5px;
+    height: 8px;
     margin-left: 6px;
     vertical-align: middle;
     color: white;

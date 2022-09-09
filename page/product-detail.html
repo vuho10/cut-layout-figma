@@ -81,15 +81,15 @@
 
                             <li class="header-navbar-item">
                                 <a href=" #" class="header-navbar-link">My Cart</a>
-                                <span class="header-navbar-mycart">3</span>
+                                <p class="header-navbar-mycart">3</p>
                             </li>
 
                             <li class="header-navbar-item">
                                 <a href=" #" class="header-navbar-country">
-                                    <img src="../asset/img/country.png" alt="">
+                                    <img class="header-navbar-country--img" src="../asset/img/country.png" alt="">
                                 </a>
-
-                                <img src="../asset/img/icon.png" class="icon-select" alt=" image">
+                                <i class="ri-arrow-drop-down-line"></i>
+                                <!-- <img src="../asset/img/icon.png" class="icon-select" alt=" image"> -->
 
                             </li>
                         </ul>
@@ -140,28 +140,28 @@
                             <div class="swiper-button-prev"></div>
                         </div>
                         <div thumbsSlider="" class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                            <div class="swiper-wrapper h">
+                                <div class="swiper-slide swiper__slide--item">
                                     <img src="../asset/img/1.png" />
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper__slide--item">
                                     <img src="../asset/img/1.png" />
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper__slide--item">
                                     <img src="../asset/img/1.png" />
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper__slide--item">
                                     <img src="../asset/img/1.png" />
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper__slide--item">
                                     <img src="../asset/img/1.png" />
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper__slide--item">
                                     <img src="../asset/img/1.png" />
 
                                 </div>
@@ -196,22 +196,25 @@
                                 <p for="size" class="product__count--title">Quantity</p>
 
                                 <div class="product__quantity">
-                                    <div class="product__quantity--minus is-form" onclick="minus()">-</div>
+                                    <button class="product__quantity--minus is-form" onclick="minus()">-</button>
 
                                     <input type="text" name="quantity" value="01" class="product__quantity--qty"
                                         id="qty-input" min="0" max="100">
 
-                                    <div class="product__quantity--plus is-form" onclick="plus()">+</div>
+                                    <button class="product__quantity--plus is-form" onclick="plus()">+</button>
                                 </div>
-
                             </form>
-                            <div class="product__btn--cart">
-                                <button href=" #" class="product__btn--add">Add To Cart</button>
 
-                                <button href=" #" class="product__btn--order"> Order Now</button>
-
+                            <div class="product__actions">
+                                <button class="product__btn">
+                                    <span class="product__btn--overlay"></span>
+                                    <span class="product__btn--text">Order Now</span>
+                                </button>
+                                <button class="product__btn product__btn--outline">
+                                    <span class="product__btn--overlay"></span>
+                                    <span class="product__btn--text">Add To Cart</span>
+                                </button>
                             </div>
-
                         </div>
 
                         <div class="product__content">
@@ -252,22 +255,21 @@
             <section class="tabs">
                 <div class="container">
                     <div class="tabs__name">
-                        <p class="tabs__name--london tablinks" onclick="openTab(event, 'London')">Product Informations
+                        <p class="tabs__name--london tablinks" onclick="openTab(event, 'London')" >Product Informations
                         </p>
 
-                        <p class="tabs__name--paris  tablinks" onclick="openTab(event, 'Paris')">Return & Warranty
-                            Policy</p>
+                        <p class="tabs__name--paris  tablinks" onclick="openTab(event, 'Paris')"  id="defaultOpen">Return & Warranty Policy</p>
                     </div>
 
                     <div class="tabs__hr"></div>
 
                     <div id="London" class="tabs__content tab">
-                        <p>London is the capital city of England.</p>
+                        <p> WELLCOME TO YOU</p>
                     </div>
 
                     <div id="Paris" class="tabs__content tab">
                         <div class="tabs__text">
-                            <h3 class="tabs__title">1. Return Policy</h3>
+                            <h2 class="tabs__title"><strong>1. Return Policy</strong></h2>
 
                             <p class="tabs__define">Customers have the right to refund the device within 28 days from
                                 the date of purchase if it
@@ -288,9 +290,9 @@
                         </div>
 
                         <div class="tabs__text">
-                            <h3 class="tabs__title">1. Warranty Policy</h3>
+                            <h2 class="tabs__title"><strong>1. Warranty Policy</strong></h2>
 
-                            <p class="tabs__warranty"> Warranty coverage</p>
+                            <h4 class="tabs__warranty"><strong>Warranty coverage</strong></h4>
 
                             <ul>
                                 <li>All XOR phone products are officially distributed in the Vietnam market via
@@ -303,7 +305,7 @@
                         </div>
 
                         <div class="tabs__text">
-                            <p class="tabs__warranty">The warranty period for repaired / replaced products</p>
+                            <h4 class="tabs__warranty"><strong>The warranty period for repaired / replaced products</strong></h4>
 
                             <p class="tabs__policy"> The warranty period for replacement spare parts is calculated as
                                 follows:</p>
@@ -324,7 +326,7 @@
                         </div>
 
                         <div class="tabs__text">
-                            <p class="tabs__warranty"> Warranty period with renewed products</p>
+                            <h4 class="tabs__warranty"> Warranty period with renewed products</h4> 
 
                             <p class="tabs__policy"> The warranty period of the renewed products is calculated as
                                 follows:</p>
@@ -342,7 +344,7 @@
                         </div>
 
                         <div class="tabs__text">
-                            <p class="tabs__warranty">Warranty conditions</p>
+                            <h2 class="tabs__warranty"> <strong>Warranty conditions</strong></h2> 
 
                             <p class="tabs__policy"> The products have some technical defects that need to be repaired
                                 within the warranty
@@ -391,7 +393,10 @@
                     <div class="product__pair">
                         <div class="product__card">
                             <div class="product__card--content">
-                                <img class="product__card--img" alt="" src="../asset/img/headphone (2).png"></img>
+                                <a href=" #" class="product__card--link-phone">
+                                    <img class="product__card--img" alt="" src="../asset/img/hs.png"></img>
+                                </a>
+
 
                                 <div class="product__card--title">Luxury Belt Pouch XOR Case</div>
 
@@ -403,7 +408,9 @@
 
                         <div class="product__card">
                             <div class="product__card--content">
-                                <img class="product__card--img" alt="" src="../asset/img/headphone (1).png"></img>
+                                <a href=" #" class="product__card--link-charger">
+                                    <img class="product__card--img" alt="" src="../asset/img/hp.png"></img>
+                                </a>
 
                                 <div class="product__card--title">Universal Wireless Charger</div>
 
@@ -458,26 +465,26 @@
 
                 <p class="customer__service--time">9:00 - 15:00 on Saturday and Sunday</p>
 
-                <div class="customer__service--phone">
+                <a class="customer__service--phone" href="#">
                     <img class="customer__service--img" src="../asset/img/Vector.png" alt="">
 
                     <p>(+84)944 756 756</p>
-                </div>
+                </a>
 
             </section>
 
             <section class="information">
                 <div class="information__icon">
-                    <a class="information__icon-img" href=" #">
-                        <img src="../asset/img/in.png" alt="">
+                    <a class="information__icon--link" href=" #">
+                        <img class="information__icon--img" src="../asset/img/in.png" alt="">
                     </a>
 
-                    <a class="information__icon-img" href=" #">
-                        <img class="information__icon-img" src="../asset/img/gr.png" alt="">
+                    <a class="information__icon--link" href=" #">
+                        <img class="information__icon--img" src="../asset/img/gr.png" alt="">
                     </a>
 
-                    <a class="information__icon-img" href=" #">
-                        <img class="information__icon-img" src="../asset/img/fb.png" alt="">
+                    <a class="information__icon--link" href=" #">
+                        <img class="information__icon--img" src="../asset/img/fb.png" alt="">
                     </a>
                 </div>
 

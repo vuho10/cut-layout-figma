@@ -91,7 +91,7 @@
 }
 
 .mySwiper .swiper-slide {
-  // padding: 9px 6px 9px 6px;
+  margin: 0;
   padding: 9px 0;
 }
 
@@ -107,8 +107,10 @@
   background-color: black;
 }
 
+
+
+
 .mySwiper .swiper-slide-thumb-active {
-  margin-right: 13px !important;
   opacity: 1;
   border: 1px solid #A5A5A5;
 

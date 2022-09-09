@@ -113,20 +113,23 @@
     }
 
     &__quantity {
+        flex-direction: row;
         display: flex;
         justify-content: center;
-        max-width: 134px;
-        width: 6.8vw;
         text-align: center;
         align-items: center;
         background: #ffffff;
         border: 1px solid #f2f2f2;
         border-radius: 24px;
+        justify-content: space-between;
+        min-width: 134px;
 
         &--minus,
         &--plus {
-            height: 21px;
-            width: 10px;
+           padding: 10px 20px;
+           border: none;
+           background: none;
+           outline: none;
             text-align: center;
             font-family: var(--ff-Poppins);
             font-size: var(--font-size-16);
@@ -138,63 +141,103 @@
         }
 
         &--qty {
-            max-width: 30px;
+            max-width: 18px;
+            width: 100%;
             font-family: var(--ff-Poppins);
             font-size: var(--font-size-16);
             font-weight: var(--font-weight-6);
-            line-height: 21px;
-            letter-spacing: 0.025em;
-            background-color: #ffffff;
-            outline: none #ffffff;
-            border: solid #ffffff;
+            background-color: none;
+            outline: none ;
+            border: none;
             text-align: center;
         }
     }
 
-    &__btn {
+    &__actions {
+        display: flex;
+        gap: 12px;
 
-        &--add {
-            font-family: var(--ff-Poppins);
-            font-size: var(--font-size-14);
-            font-weight: var(--font-weight-6);
-            line-height: 21px;
-            margin-right: 16px;
-            background: linear-gradient(rgb(255, 255, 255) 0 0) padding-box, linear-gradient(to right, rgb(204, 159, 58), rgb(235, 207, 130)) border-box;
-            border: 2px solid transparent !important;
-            border-radius: 30px;
-            color: #CB9D37;
-
-        }
-
-        &--add:hover {
-            background-color: #bd369f;
-
-        }
-
-        &--order {
-
-            font-family: var(--ff-Poppins);
-            font-size: var(--font-size-14);
-            font-weight: var(--font-weight-6);
-            line-height: 21px;
-            color: white;
-            border: 2px solid white;
-            border-radius: 30px;
-            background: linear-gradient(to right, #957327 0%, #dfc47a 100%);
-        }
-
-        &--add,
-        &--order {
-            cursor: pointer;
-            max-width: 230px;
-            width: 15vw;
-            height: 3.333vw;
-            min-width: 180px;
+        & .product__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 234px;
+            width: 20vw;
             max-height: 48px;
-            min-height: 48px;
-            border: none;
-            outline: none;
+            height: 20vw;
+            position: relative;
+            z-index: 2;
+            background-color: transparent;
+            border-radius: 99px;
+            border: 0;
+            padding: 2px;
+            background: linear-gradient(86.15deg, #957327 0%, #dfc47a 100%);
+
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+
+            cursor: pointer;
+
+            &:hover,
+            &--outline {
+                .product__btn {
+                    &--overlay {
+                        opacity: 1;
+                    }
+
+                    &--text {
+                        color: #cb9d37;
+                    }
+                }
+            }
+
+            &--outline {
+                &:hover {
+                    .product__btn {
+                        &--overlay {
+                            opacity: 0;
+                        }
+
+                        &--text {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            &--overlay {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 5;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                border-radius: 99px;
+                opacity: 0;
+                transition: 0.3s;
+            }
+
+            &--text {
+                position: relative;
+                z-index: 10;
+
+                font-family:var(--ff-Poppins);
+                font-size: var(--font-size-14);
+                font-weight: var(--font-weight-6);
+                line-height: 21px;
+                letter-spacing: 0.05em;
+                text-align: center;
+                color: #ffffff;
+                white-space: nowrap;
+
+                transition: 0.3s;
+            }
         }
+
     }
 
     &__content {
