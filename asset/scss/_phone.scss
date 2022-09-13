@@ -20,21 +20,22 @@
         }
 
         &--mes,
-        &--call {
+        &--call {          
+            max-width: 64px;
+
+            min-width: 44px;
+            min-height: 44px;
+
+            display: flex;         
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 32px;          
             box-shadow: 4px 4px 16px 0px #0000001A;
             background: #FFFFFF;
             font-size: 25px;
             cursor: pointer;
             transform: 0.4s;
-            max-width: 64px;
-            // width: 4.444vw;
-            // height: 4.444vw;
-            min-width: 44px;
-            min-height: 44px;
-            border-radius: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
         }
     }

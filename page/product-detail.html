@@ -20,8 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -35,8 +34,8 @@
 </head>
 
 <body>
-    <div class="wrapper ">
-        <header class="scroll__fixed--nav">
+    <div class="wrapper">
+        <header class="scroll__fixed--nav theme"  id="headerScroll">
             <div class="container">
                 <div class="header">
                     <div class="header-hamburger">
@@ -48,7 +47,7 @@
                     </div>
 
                     <a href=" #" class="header-logo">
-                        <img class="header-logo-img" src="../asset/img/logo1.png" alt=""></img>
+                        <img class="header-logo-img" id="header-logo-img"src="../asset/img/logo1.png" alt=""></img>
                     </a>
 
                     <div class="header-navbar">
@@ -81,6 +80,7 @@
 
                             <li class="header-navbar-item mycart">
                                 <a href=" #" class="header-navbar-link mycart">My Cart</a>
+
                                 <p class="header-navbar-mycart mycart">3</p>
                             </li>
 
@@ -88,9 +88,8 @@
                                 <a href=" #" class="header-navbar-country">
                                     <img class="header-navbar-country--img" src="../asset/img/country.png" alt="">
                                 </a>
-                                <i class="ri-arrow-drop-down-line"></i>
-                                <!-- <img src="../asset/img/icon.png" class="icon-select" alt=" image"> -->
-
+                                <img class="header-navbar-icon"src="../asset/img/icon.png" alt="">
+                                <!-- <i class="ri-arrow-drop-down-line"></i> -->
                             </li>
                         </ul>
                     </div>
@@ -105,7 +104,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main id="main">
             <section class="container">
                 <div class="product__details">
                     <div class="product__slider">
@@ -173,46 +172,49 @@
 
                         <p class="product__prices">đ 99,000,000</p>
                         <div class="product__color">
-                            <div class="product__color--name tabslide" onclick="openSlide(event, 'classic')">
+                            <div class="product__color--name tabslide">
                                 <p class="product__color--classic">Classic</p>
 
                                 <p class="product__color--brand-c"></p>
                             </div>
 
-                            <div class="product__color--name tabslide" onclick="openSlide(event, 'ebony')">
-                                <p class="product__color--ebony">Ebony</p>
+                            <div class="product__color--name tabslide" id="a" onclick="openCategory(event,'a')">
+                                <p class="product__color--ebony tabCategories">Ebony</p>
 
-                                <p class="product__color--brand-e"></p>
+                                <p class="product__color--brand-e tabCategories"></p>
                             </div>
 
-                            <div class="product__color--name tabslide" onclick="openSlide(event, 'rose')">
-                                <p class="product__color--rose">Rose</p>
+                            <div class="product__color--name tabslide" id="a" onclick="openCategory(event,'a')">
+                                <p class="product__color--rose tabCategories">Rose</p>
 
-                                <p class="product__color--brand-r"></p>
+                                <p class="product__color--brand-r tabCategories"></p>
                             </div>
                         </div>
                         <div class="product__count">
-                            <form action="#" class="product__count--form">
+                            <div class="product__count--form">
                                 <p for="size" class="product__count--title">Quantity</p>
 
                                 <div class="product__quantity">
                                     <button class="product__quantity--minus is-form" onclick="minus()">-</button>
 
                                     <input type="text" name="quantity" value="01" class="product__quantity--qty"
-                                        id="qty-input" min="0" max="100">
+                                        id="qty-input" min="0" max="100" maxlength="2">
 
                                     <button class="product__quantity--plus is-form" onclick="plus()">+</button>
                                 </div>
-                            </form>
+                            </div>
 
                             <div class="product__actions">
-                                <button class="product__btn">
+                                <button class="product__btn product__btn--outline" onclick="checkQty()">
                                     <span class="product__btn--overlay"></span>
-                                    <span class="product__btn--text">Order Now</span>
+
+                                    <span class="product__btn--text" >Add To Cart</span>
                                 </button>
-                                <button class="product__btn product__btn--outline">
+
+                                <button class="product__btn "  onclick="checkQty()">
                                     <span class="product__btn--overlay"></span>
-                                    <span class="product__btn--text">Add To Cart</span>
+
+                                    <span class="product__btn--text">Order Now</span>
                                 </button>
                             </div>
                         </div>
@@ -241,24 +243,25 @@
 
             <section class="contact">
                 <div class="contact__store">
-                    <div class="contact__store--mes">
+                    <a class="contact__store--mes" onclick="linkMes()">
                         <i class="ri-messenger-fill"></i>
-                    </div>
+                    </a>
 
-                    <div class="contact__store--call">
+                    <a class="contact__store--call" href="tel:0862173072">
                         <i class="ri-phone-fill"></i>
 
-                    </div>
+                    </a>
                 </div>
             </section>
 
             <section class="tabs">
                 <div class="container">
                     <div class="tabs__name">
-                        <p class="tabs__name--london tablinks" onclick="openTab(event, 'London')" >Product Informations
+                        <p class="tabs__name--london tablinks" onclick="openTab(event, 'London')">Product Informations
                         </p>
 
-                        <p class="tabs__name--paris  tablinks" onclick="openTab(event, 'Paris')"  id="defaultOpen">Return & Warranty Policy</p>
+                        <p class="tabs__name--paris  tablinks" onclick="openTab(event, 'Paris')" id="defaultOpen">Return
+                            & Warranty Policy</p>
                     </div>
 
                     <div class="tabs__hr"></div>
@@ -305,7 +308,8 @@
                         </div>
 
                         <div class="tabs__text">
-                            <h4 class="tabs__warranty"><strong>The warranty period for repaired / replaced products</strong></h4>
+                            <h4 class="tabs__warranty"><strong>The warranty period for repaired / replaced
+                                    products</strong></h4>
 
                             <p class="tabs__policy"> The warranty period for replacement spare parts is calculated as
                                 follows:</p>
@@ -326,7 +330,7 @@
                         </div>
 
                         <div class="tabs__text">
-                            <h4 class="tabs__warranty"> Warranty period with renewed products</h4> 
+                            <h4 class="tabs__warranty"> Warranty period with renewed products</h4>
 
                             <p class="tabs__policy"> The warranty period of the renewed products is calculated as
                                 follows:</p>
@@ -344,7 +348,7 @@
                         </div>
 
                         <div class="tabs__text">
-                            <h2 class="tabs__warranty"> <strong>Warranty conditions</strong></h2> 
+                            <h2 class="tabs__warranty"> <strong>Warranty conditions</strong></h2>
 
                             <p class="tabs__policy"> The products have some technical defects that need to be repaired
                                 within the warranty
@@ -465,9 +469,8 @@
 
                 <p class="customer__service--time">9:00 - 15:00 on Saturday and Sunday</p>
 
-                <a class="customer__service--phone" href="#">
+                <a class="customer__service--phone" href="tel://0862173072">
                     <img class="customer__service--img" src="../asset/img/Vector.png" alt="">
-
                     <p>(+84)944 756 756</p>
                 </a>
 
@@ -475,17 +478,17 @@
 
             <section class="information">
                 <div class="information__icon">
-                    <a class="information__icon--link" href=" #">
+                    <button class="information__icon--link" onclick="linkIn()">
                         <img class="information__icon--img" src="../asset/img/in.png" alt="">
-                    </a>
+                    </button>
 
-                    <a class="information__icon--link" href=" #">
+                    <button class="information__icon--link" onclick="linkInstagram()">
                         <img class="information__icon--img" src="../asset/img/gr.png" alt="">
-                    </a>
+                    </button>
 
-                    <a class="information__icon--link" href=" #">
+                    <button class="information__icon--link" onclick="linkFB()">
                         <img class="information__icon--img" src="../asset/img/fb.png" alt="">
-                    </a>
+                    </button>
                 </div>
 
                 <div class="information__website">
@@ -532,11 +535,20 @@
                 </div>
             </section>
         </footer>
+        <div id="modal" class="modal">
+            <div class="modal__content">
+                <h3 class="modal__title">Exceeding the amount</h3>
+                <p class="modal__discription">The maximum quantity of <span>XOR Titanium </span> products that can be purchased is
+                    <span class="modal__number">2</span> products/order.
+                </p>
+                <button onclick="closeModal()" class="modal__btn--primary">Agree</button>
+            </div>
+
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="../asset/js/slider.js"></script>
-    <script src="../asset/js/navbar.js"></script>
+    <script src="../asset/js/main.js"></script>
     <!-- sass ./asset/scss/app.scss ./asset/css/app.css --watch -->
 </body>
 

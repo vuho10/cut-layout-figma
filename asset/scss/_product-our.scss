@@ -13,6 +13,7 @@
 
     &__our--title {
         margin-bottom: 28px;
+
         font-family: var(--ff-roboto-condensed);
         font-size: var(--font-size-36);
         font-weight: var(--font-weight-7);
@@ -28,15 +29,14 @@
     }
 
     &__card {
-        // position: relative;
         max-width: 585px;
         min-width: 180px;
         width: 100%;
+
         background: #FAFAFA;
         border-radius: 3px;
 
         &--link-phone {
-
             & .product__card--img {
                 max-width: 50px;
                 width: 20vw;
@@ -60,12 +60,14 @@
         &--content {
             justify-content: center;
             padding: 47px 0 48px 0;
+
             text-align: center;
             align-items: center;
         }
 
         &--title {
             margin: 12px 0 16px 0;
+
             font-family: var(--ff-Poppins);
             font-size: var(--font-size-18);
             font-weight: var(--font-weight-6);
@@ -76,6 +78,7 @@
 
         &--prices {
             margin-bottom: 53px;
+            
             font-family: var(--ff-Poppins);
             font-size: var(--font-size-18);
             font-weight: var(--font-weight-4);

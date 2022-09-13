@@ -5,6 +5,7 @@
 
     &--title {
         margin-bottom: 28px;
+
         font-family: var(--ff-roboto-condensed);
         font-size: var(--font-size-36);
         font-weight: var(--font-weight-7);
@@ -21,6 +22,7 @@
         max-width: 585px;
         min-width: 180px;
         width: 100%;
+
         vertical-align: middle;
     }
 
@@ -28,6 +30,7 @@
         position: absolute;
         bottom: 24px;
         left: 32px;
+        
         font-family: var(--ff-roboto-condensed);
         font-size: 20px;
         color: #FFFFFF;

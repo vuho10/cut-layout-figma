@@ -4,6 +4,9 @@
         justify-content: center;
         gap: 32px;
         padding: 10px 20px 12px 20px;
+
+        text-align: left;
+        white-space: nowrap;
         background-color: #00344C;
         color: #FFFFFF;
         font-family: var(--ff-Poppins);
@@ -11,27 +14,29 @@
         font-weight: 600;
         line-height: 14px;
         letter-spacing: 0.05em;
-        text-align: left;
-        white-space: nowrap;
+       
     }
 
     &__service--phone {
         display: flex;
         padding: 0 20.2px;
         gap: 16px;
+
+        white-space: nowrap;
+        align-items: center;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 3px;
         color: #FFFFFF;
-        white-space: nowrap;
+      
 
     }
 
     &__service--border {
         width: 1px;
         height: 15px;
+
         background-color: white;
     }
-
     &__service--phone,
     &__service--hotline {
         font-family: var(--ff-Poppins);
@@ -55,12 +60,12 @@
     &__service--img {
         height: 16px;
         width: 16px;
-        margin-top: 12px;
     }
 }
 
 .information {
     padding: 65px 0 15px 0;
+
     text-align: center;
     align-items: center;
     background-color: #B69046;
@@ -72,7 +77,14 @@
         &--img {
             width: 30px;
             height: 30px;
+
             vertical-align: middle;
+        }
+
+        &--link {
+            background: none;
+            outline: none;
+            border: none;
         }
 
         &--link:nth-child(2) {
@@ -83,8 +95,9 @@
     &__website--list {
         display: flex;
         justify-content: center;
-        gap: 49px;
+        gap: 50px;
         padding: 0 20px;
+
         font-family: var(--ff-Poppins);
         font-size: var(--font-size-14);
         font-weight: var(--font-weight-4);
@@ -109,6 +122,7 @@
             width: 1px;
             height: 16px;
             margin-top: 3px;
+            
             background-color: white;
         }
     }
@@ -118,10 +132,10 @@
     }
 
     &__copy {
-       
+
         margin-bottom: -13px;
-       
-        &--right{
+
+        &--right {
             font-family: var(--ff-source);
             color: white;
             font-size: 13px;
@@ -132,4 +146,3 @@
         }
     }
 }
-
