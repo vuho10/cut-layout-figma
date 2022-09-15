@@ -26,7 +26,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: var(--pd-c);
         text-align: center;
         align-items: center;
     
@@ -55,7 +54,7 @@
             text-align: center;
             padding: 0px 32px;
     
-            & .modal__number {
+            & .modal__number, & .modal__name {
                 font-weight: 700;
             }
         }
